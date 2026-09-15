@@ -1,0 +1,837 @@
+{
+  "classification": "mobile_systems_boundary_and_evaluation_paper",
+  "confirmatory_quality_scope": "three unseen scenes, two modes, 1,800 captured frames",
+  "displayed_result_gate": {
+    "authoritative_quality_path": "strict_quality_gate",
+    "legacy_nested_quality_gate_status": "pending_fresh_trace_quality_evaluation",
+    "legacy_nested_status_is_stale": true,
+    "provenance_interpretation": "runtime_acceptance_and_strict_eligibility_do_not_establish_complete_composition_history",
+    "runtime_accepted_neural_count": 172,
+    "runtime_decision": "reject_refresh_policy_runtime_gate",
+    "runtime_gate_pass": false,
+    "strict_720p_same_frame_neural_fraction": 0.0,
+    "strict_quality_decision": "reject_refresh_quality_gate",
+    "strict_quality_gate_pass": false,
+    "strict_same_frame_eligible_count": 0
+  },
+  "evidence_hashes": [
+    {
+      "path": "results/tables/rk3576_paper1_v1_final_decision.json",
+      "sha256": "2ee2fe55fa906dcc6c6690b2119e913e61a4d4a52526e40f56dd6c45b09fe9e7"
+    },
+    {
+      "path": "results/tables/paper1_hotmobile2027_reprojection.json",
+      "sha256": "95e3f523f02d5f0e671cd5019a729cb8ffc2db6ecd2f607f33112c32b02ce9ff"
+    },
+    {
+      "path": "configs/rk3576_refresh_scheduler_paper1_v1.yaml",
+      "role": "scheduler_config",
+      "sha256": "56637b42c7318c6fe94164b182701f236b1f4bcdaa6a11ae054d3dab6f0959e5",
+      "size_bytes": 1266
+    },
+    {
+      "path": "configs/rk3576_refresh_quality_paper1_v1.yaml",
+      "role": "quality_config",
+      "sha256": "b13d15a5cc6333323211df4aeca484d934355913622c447bbc0dd04492b5eff9",
+      "size_bytes": 1730
+    },
+    {
+      "path": "results/models/rk3576_neural_refresh_paper1_v1.json",
+      "role": "policy",
+      "sha256": "0631920f938b8ea7ee693c7154a82dfb214a00933e2db1bd44d364461f53223e",
+      "size_bytes": 1730
+    },
+    {
+      "path": "results/manifests/rk3576_paper1_v1_evidence_manifest.json",
+      "role": "evidence_manifest",
+      "sha256": "cb1e847a2d993da2fbfcb5125500f2f6a4011987faae6bebfaea787ba6159464",
+      "size_bytes": 11630
+    },
+    {
+      "path": "results/tables/rk3576_refresh_scheduler_paper1_v1.json",
+      "role": "scheduler_report",
+      "sha256": "c4fa4b5b3469338185075596209db0c8fffd62dbc1f01e38e12335c7f6eb5c8e",
+      "size_bytes": 199925
+    },
+    {
+      "path": "results/tables/rk3576_refresh_quality_paper1_v1.json",
+      "role": "quality_report",
+      "sha256": "ea0ea5a9cc6cefbf76e524c8f7e5f8a690566fa9051de31304a944e69cb23397",
+      "size_bytes": 18727
+    },
+    {
+      "path": "docs/paper1_renderer_deadline_refresh_v1.md",
+      "role": "result_note",
+      "sha256": "c185110a932e22fa936535f73c49d80a6a41b4f71276545cef93b884a547f75b",
+      "size_bytes": 6333
+    },
+    {
+      "path": "results/rk3576/phase13_npu_width_integrated/student_npu_w24_int8/always_full/mode_180p_to_360p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "a5c3733b7c80e39fbd45cb1728625c6e9fb9bac995b000750af3204299b3bd85"
+    },
+    {
+      "path": "results/rk3576/phase13_npu_width_integrated/student_npu_w24_int8/always_full/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "dfacfe07ec6905d9643e23512c5505dd0260106b582301e973c32bc2781b4237"
+    }
+  ],
+  "experiment_id": "paper1_hotmobile2027_workshop_v1",
+  "historical_instrumentation": {
+    "contract_instantiation": "partial",
+    "observed_events": [
+      "immediate_fallback_presentation",
+      "terminal_runtime_route",
+      "runtime_acceptance_or_discard",
+      "frame_age_and_deadline_fields"
+    ],
+    "unobserved_events": [
+      "complete_later_renderer_composition_log",
+      "physical_panel_scanout"
+    ]
+  },
+  "late_reprojection_decision": "reject_as_positive_mechanism",
+  "latency_breakdown_rows": [
+    {
+      "accepted_neural_fraction": 0.12666666666666668,
+      "deadline_miss_count": 262,
+      "deadline_ms": 33.3333333333333,
+      "display_deadline_miss_rate": 0.33444816053511706,
+      "display_fps": 30.000074000182533,
+      "display_target_met": true,
+      "dropped_frame_intervals": 100,
+      "fallback_rate": 0.8733333333333333,
+      "frame_count": 300,
+      "latency_components": {
+        "input_transfer": {
+          "mean_ms": 8.98352565,
+          "p95_ms": 13.014335299999999,
+          "p99_ms": 13.55217282
+        },
+        "npu": {
+          "mean_ms": 7.311740746666666,
+          "p95_ms": 10.70728255,
+          "p99_ms": 11.352963649999992
+        },
+        "presentation": {
+          "mean_ms": 1.0758133333333333,
+          "p95_ms": 1.7808500000000003,
+          "p99_ms": 3.1054499999999767
+        },
+        "queue": {
+          "mean_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.0
+        },
+        "reconstruction": {
+          "mean_ms": 10.29738263,
+          "p95_ms": 11.7398589,
+          "p99_ms": 12.33520928
+        },
+        "render": {
+          "mean_ms": 7.476956666666666,
+          "p95_ms": 10.00975,
+          "p99_ms": 10.429889999999999
+        },
+        "simulation": {
+          "mean_ms": 0.3184366666666667,
+          "p95_ms": 0.35305000000000003,
+          "p99_ms": 0.5912599999999997
+        },
+        "upload": {
+          "mean_ms": 0.00812,
+          "p95_ms": 0.04605000000000001,
+          "p99_ms": 0.0565499999999995
+        }
+      },
+      "mean_backend_gpu_compose_ms": 9.761679603333334,
+      "mean_backend_native_total_ms": 8.287076350000001,
+      "mean_backend_npu_inference_ms": 7.311740746666666,
+      "mean_frame_age_ms": 76.93538666666666,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "neural_service_fps": 30.000074000182533,
+      "npu_completed_frames": 300,
+      "npu_deadline_miss_rate": 0.8733333333333333,
+      "npu_invocations_per_frame": 1.0,
+      "p95_backend_gpu_compose_ms": 11.31569905,
+      "p95_backend_native_total_ms": 11.8031716,
+      "p95_backend_npu_inference_ms": 10.70728255,
+      "p95_frame_age_ms": 82.98434999999999,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 86.02241,
+      "p99_selector_ms": 0.0,
+      "profile_id": "always_neural",
+      "refresh_action_counts": {
+        "disabled": 300
+      },
+      "route_status_counts": {
+        "accepted_neural": 38,
+        "client_late_neural_discarded": 262
+      },
+      "row_type": "paper1_hotmobile2027_physical_run",
+      "same_frame_neural_fraction": 0.0,
+      "scene_variant": "representative_physical_trace",
+      "selected_method_counts": {
+        "stage_abc": 300
+      },
+      "target_fps": 30,
+      "variant": "always_neural"
+    },
+    {
+      "accepted_neural_fraction": 0.0,
+      "deadline_miss_count": 300,
+      "deadline_ms": 33.3333333333333,
+      "display_deadline_miss_rate": 0.5016722408026756,
+      "display_fps": 21.875531772909522,
+      "display_target_met": false,
+      "dropped_frame_intervals": 150,
+      "fallback_rate": 1.0,
+      "frame_count": 300,
+      "latency_components": {
+        "input_transfer": {
+          "mean_ms": 14.403373056666666,
+          "p95_ms": 40.98334045,
+          "p99_ms": 42.2197697
+        },
+        "npu": {
+          "mean_ms": 26.719085529999997,
+          "p95_ms": 41.438846500000004,
+          "p99_ms": 44.32428525
+        },
+        "presentation": {
+          "mean_ms": 7.61956,
+          "p95_ms": 26.315450000000006,
+          "p99_ms": 28.407729999999997
+        },
+        "queue": {
+          "mean_ms": 0.0,
+          "p95_ms": 0.0,
+          "p99_ms": 0.0
+        },
+        "reconstruction": {
+          "mean_ms": 31.14778864333333,
+          "p95_ms": 47.48245155000001,
+          "p99_ms": 57.37907298
+        },
+        "render": {
+          "mean_ms": 12.50459,
+          "p95_ms": 25.606849999999998,
+          "p99_ms": 43.76802
+        },
+        "simulation": {
+          "mean_ms": 0.35570999999999997,
+          "p95_ms": 0.63815,
+          "p99_ms": 0.9035299999999996
+        },
+        "upload": {
+          "mean_ms": 0.0022733333333333334,
+          "p95_ms": 0.005,
+          "p99_ms": 0.009
+        }
+      },
+      "mean_backend_gpu_compose_ms": 29.89367280333333,
+      "mean_backend_native_total_ms": 29.383344076666667,
+      "mean_backend_npu_inference_ms": 26.719085529999997,
+      "mean_frame_age_ms": 136.25460333333334,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "neural_service_fps": 21.875531772909522,
+      "npu_completed_frames": 300,
+      "npu_deadline_miss_rate": 1.0,
+      "npu_invocations_per_frame": 1.0,
+      "p95_backend_gpu_compose_ms": 46.052295400000006,
+      "p95_backend_native_total_ms": 43.95090365,
+      "p95_backend_npu_inference_ms": 41.438846500000004,
+      "p95_frame_age_ms": 163.78730000000002,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 174.89817,
+      "p99_selector_ms": 0.0,
+      "profile_id": "always_neural",
+      "refresh_action_counts": {
+        "disabled": 300
+      },
+      "route_status_counts": {
+        "client_late_neural_discarded": 300
+      },
+      "row_type": "paper1_hotmobile2027_physical_run",
+      "same_frame_neural_fraction": 0.0,
+      "scene_variant": "representative_physical_trace",
+      "selected_method_counts": {
+        "stage_abc": 300
+      },
+      "target_fps": 30,
+      "variant": "always_neural"
+    }
+  ],
+  "physical_decision": "reject_paper1_renderer_deadline_claim",
+  "physical_runtime_scope": "five scenes, 31,500 frames, RK3576",
+  "physical_scope": {
+    "power_measured": false,
+    "quality_frames": 1500,
+    "runtime_frames": 31500,
+    "runtime_rows": 105,
+    "scene_count": 5
+  },
+  "power_claim_supported": false,
+  "primary_runtime_accounting": {
+    "bypassed_count": 1288,
+    "categories_are_not_all_mutually_exclusive": true,
+    "completed_count": 212,
+    "denominator_frame_records": 1500,
+    "distinct_renderer_commit_count_available": false,
+    "initial_fallback_count": 1500,
+    "late_discarded_neural_count": 40,
+    "panel_scanout_observed": false,
+    "runtime_accepted_neural_count": 172,
+    "runtime_gate_frames": 3,
+    "runtime_gate_ms": 100.0,
+    "strict_gate_frames": 1,
+    "strict_gate_ms": 33.333333333333336,
+    "strict_same_frame_eligible_count": 0,
+    "submitted_count": 212,
+    "terminal_classical_route_count": 1328
+  },
+  "provenance_records": [
+    {
+      "path": "configs/rk3576_refresh_scheduler_paper1_v1.yaml",
+      "role": "scheduler_config",
+      "sha256": "56637b42c7318c6fe94164b182701f236b1f4bcdaa6a11ae054d3dab6f0959e5",
+      "size_bytes": 1266
+    },
+    {
+      "path": "configs/rk3576_refresh_quality_paper1_v1.yaml",
+      "role": "quality_config",
+      "sha256": "b13d15a5cc6333323211df4aeca484d934355913622c447bbc0dd04492b5eff9",
+      "size_bytes": 1730
+    },
+    {
+      "path": "results/models/rk3576_neural_refresh_paper1_v1.json",
+      "role": "policy",
+      "sha256": "0631920f938b8ea7ee693c7154a82dfb214a00933e2db1bd44d364461f53223e",
+      "size_bytes": 1730
+    },
+    {
+      "path": "results/manifests/rk3576_paper1_v1_evidence_manifest.json",
+      "role": "evidence_manifest",
+      "sha256": "cb1e847a2d993da2fbfcb5125500f2f6a4011987faae6bebfaea787ba6159464",
+      "size_bytes": 11630
+    },
+    {
+      "path": "results/tables/rk3576_refresh_scheduler_paper1_v1.json",
+      "role": "scheduler_report",
+      "sha256": "c4fa4b5b3469338185075596209db0c8fffd62dbc1f01e38e12335c7f6eb5c8e",
+      "size_bytes": 199925
+    },
+    {
+      "path": "results/tables/rk3576_refresh_quality_paper1_v1.json",
+      "role": "quality_report",
+      "sha256": "ea0ea5a9cc6cefbf76e524c8f7e5f8a690566fa9051de31304a944e69cb23397",
+      "size_bytes": 18727
+    },
+    {
+      "path": "docs/paper1_renderer_deadline_refresh_v1.md",
+      "role": "result_note",
+      "sha256": "c185110a932e22fa936535f73c49d80a6a41b4f71276545cef93b884a547f75b",
+      "size_bytes": 6333
+    }
+  ],
+  "quality_rows": [
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 0.0,
+      "method": "bicubic",
+      "mode_id": "mode_180p_to_360p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.08299482324057156,
+      "scene_equal_psnr": 29.45715681798033,
+      "scene_equal_ssim": 0.9582958398041902
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 1.0,
+      "method": "fresh_neural",
+      "mode_id": "mode_180p_to_360p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.05232893309935375,
+      "scene_equal_psnr": 29.318176308356357,
+      "scene_equal_ssim": 0.9554400223272818
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 0.0,
+      "method": "lanczos",
+      "mode_id": "mode_180p_to_360p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.0971574995804716,
+      "scene_equal_psnr": 29.2458400381101,
+      "scene_equal_ssim": 0.9535007609261407
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 0.4817289770913155,
+      "method": "motion_depth_disocclusion",
+      "mode_id": "mode_180p_to_360p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.08151973204480277,
+      "scene_equal_psnr": 29.414042837181935,
+      "scene_equal_ssim": 0.9568620213755854
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 1.0,
+      "method": "stale_unwarped",
+      "mode_id": "mode_180p_to_360p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.1043101328390616,
+      "scene_equal_psnr": 28.883610145080752,
+      "scene_equal_ssim": 0.9297173641346119
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 0.0,
+      "method": "bicubic",
+      "mode_id": "mode_360p_to_720p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.05553441991408666,
+      "scene_equal_psnr": 32.61210981384273,
+      "scene_equal_ssim": 0.9772827713577836
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 1.0,
+      "method": "fresh_neural",
+      "mode_id": "mode_360p_to_720p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.03619009221869487,
+      "scene_equal_psnr": 32.42135304229384,
+      "scene_equal_ssim": 0.9755903725270872
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 0.0,
+      "method": "lanczos",
+      "mode_id": "mode_360p_to_720p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.0638246697684129,
+      "scene_equal_psnr": 32.40612903672854,
+      "scene_equal_ssim": 0.9742582948119551
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 0.48800475684466793,
+      "method": "motion_depth_disocclusion",
+      "mode_id": "mode_360p_to_720p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.055595293710077244,
+      "scene_equal_psnr": 32.571643907074105,
+      "scene_equal_ssim": 0.9763554511246858
+    },
+    {
+      "age_frames": 2,
+      "frame_count": 87,
+      "mean_valid_history_fraction": 1.0,
+      "method": "stale_unwarped",
+      "mode_id": "mode_360p_to_720p",
+      "scene_count": 3,
+      "scene_equal_lpips": 0.09178532701399593,
+      "scene_equal_psnr": 32.024540081242876,
+      "scene_equal_ssim": 0.9588040819874516
+    }
+  ],
+  "reporting_warnings": [
+    {
+      "action": "preserve frozen source; report through authoritative final gate",
+      "authoritative_path": "strict_quality_gate.decision",
+      "authoritative_value": "reject_refresh_quality_gate",
+      "field": "primary_720p_gate.quality_gate_status",
+      "frozen_value": "pending_fresh_trace_quality_evaluation"
+    }
+  ],
+  "runtime_rows": [
+    {
+      "display_fps": 29.992519939919468,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 1.0,
+      "p95_frame_age_ms": 92.28196,
+      "profile_id": "always_neural",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.3433333333333333,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 29.996958428195722,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.5,
+      "p95_frame_age_ms": 87.37604,
+      "profile_id": "fixed_period_2",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.10866666666666666,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.012701003329955,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 84.41517,
+      "profile_id": "gpu_bicubic",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.013088766863717,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 83.89913,
+      "profile_id": "gpu_lanczos",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.00737424707134,
+      "mean_refresh_selector_ms": 0.6068100000000001,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.61,
+      "p95_frame_age_ms": 90.23152999999999,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.174,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 18.620409250411605,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 1.0,
+      "p95_frame_age_ms": 207.37635,
+      "profile_id": "always_neural",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 25.85335750954052,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.5,
+      "p95_frame_age_ms": 171.13215,
+      "profile_id": "fixed_period_2",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.00242820321197,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 85.18713,
+      "profile_id": "gpu_bicubic",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.003958444923505,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 85.05372,
+      "profile_id": "gpu_lanczos",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.00884516919688,
+      "mean_refresh_selector_ms": 0.7111706666666666,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.14133333333333334,
+      "p95_frame_age_ms": 127.29840000000002,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    }
+  ],
+  "scene_runtime_rows": [
+    {
+      "accepted_neural_fraction": 0.12666666666666668,
+      "deadline_miss_count": 10,
+      "deadline_ms": 100.0,
+      "display_fps": 30.015111608191003,
+      "display_target_met": true,
+      "frame_count": 300,
+      "mean_backend_gpu_compose_ms": 33.2485923125,
+      "mean_backend_native_total_ms": 26.636413145833334,
+      "mean_backend_npu_inference_ms": 23.617180541666666,
+      "mean_frame_age_ms": 89.18373,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_refresh_selector_ms": 0.6531866666666666,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_completed_frames": 48,
+      "npu_invocations_per_frame": 0.16,
+      "p95_backend_gpu_compose_ms": 52.70249285,
+      "p95_backend_native_total_ms": 40.7425552,
+      "p95_backend_npu_inference_ms": 37.9179311,
+      "p95_frame_age_ms": 130.77685000000002,
+      "p95_refresh_selector_ms": 0.93505,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 140.42475999999996,
+      "p99_selector_ms": 0.0,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "refresh_action_counts": {
+        "bypass": 252,
+        "submit": 48
+      },
+      "refresh_reason_counts": {
+        "latest_frame_only_context_busy": 96,
+        "predicted_refresh_would_be_stale": 156,
+        "refresh_due_capacity_available": 48
+      },
+      "renderer_priority_fraction": 1.0,
+      "route_status_counts": {
+        "accepted_neural": 38,
+        "client_late_neural_discarded": 10,
+        "refresh_policy_bypass": 252
+      },
+      "row_type": "rk3576_refresh_paper1_v1_physical_run",
+      "scene_variant": "barrier_yard",
+      "selected_method_counts": {
+        "bicubic": 252,
+        "stage_abc": 48
+      },
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30,
+      "variant": "renderer_deadline_refresh_v1"
+    },
+    {
+      "accepted_neural_fraction": 0.18,
+      "deadline_miss_count": 12,
+      "deadline_ms": 100.0,
+      "display_fps": 30.01346303907056,
+      "display_target_met": true,
+      "frame_count": 300,
+      "mean_backend_gpu_compose_ms": 29.540456075757575,
+      "mean_backend_native_total_ms": 33.69436537878788,
+      "mean_backend_npu_inference_ms": 31.09617004545455,
+      "mean_frame_age_ms": 90.5097,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_refresh_selector_ms": 0.64728,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_completed_frames": 66,
+      "npu_invocations_per_frame": 0.22,
+      "p95_backend_gpu_compose_ms": 46.359731249999996,
+      "p95_backend_native_total_ms": 42.1281275,
+      "p95_backend_npu_inference_ms": 39.60889025,
+      "p95_frame_age_ms": 123.4141,
+      "p95_refresh_selector_ms": 0.912,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 128.4663199999999,
+      "p99_selector_ms": 0.0,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "refresh_action_counts": {
+        "bypass": 234,
+        "submit": 66
+      },
+      "refresh_reason_counts": {
+        "latest_frame_only_context_busy": 130,
+        "predicted_refresh_would_be_stale": 104,
+        "refresh_due_capacity_available": 66
+      },
+      "renderer_priority_fraction": 0.9933333333333333,
+      "route_status_counts": {
+        "accepted_neural": 54,
+        "client_late_neural_discarded": 12,
+        "refresh_policy_bypass": 234
+      },
+      "row_type": "rk3576_refresh_paper1_v1_physical_run",
+      "scene_variant": "corridor_neon",
+      "selected_method_counts": {
+        "bicubic": 234,
+        "stage_abc": 66
+      },
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30,
+      "variant": "renderer_deadline_refresh_v1"
+    },
+    {
+      "accepted_neural_fraction": 0.06666666666666667,
+      "deadline_miss_count": 4,
+      "deadline_ms": 100.0,
+      "display_fps": 30.00510586884868,
+      "display_target_met": true,
+      "frame_count": 300,
+      "mean_backend_gpu_compose_ms": 30.68218870833333,
+      "mean_backend_native_total_ms": 32.85179695833333,
+      "mean_backend_npu_inference_ms": 30.351837291666666,
+      "mean_frame_age_ms": 83.30308,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_refresh_selector_ms": 0.7339766666666666,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_completed_frames": 24,
+      "npu_invocations_per_frame": 0.08,
+      "p95_backend_gpu_compose_ms": 46.09367900000001,
+      "p95_backend_native_total_ms": 40.337282800000004,
+      "p95_backend_npu_inference_ms": 36.9936722,
+      "p95_frame_age_ms": 126.30680000000001,
+      "p95_refresh_selector_ms": 1.05015,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 138.57314999999997,
+      "p99_selector_ms": 0.0,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "refresh_action_counts": {
+        "bypass": 276,
+        "submit": 24
+      },
+      "refresh_reason_counts": {
+        "latest_frame_only_context_busy": 48,
+        "predicted_refresh_would_be_stale": 228,
+        "refresh_due_capacity_available": 24
+      },
+      "renderer_priority_fraction": 1.0,
+      "route_status_counts": {
+        "accepted_neural": 20,
+        "client_late_neural_discarded": 4,
+        "refresh_policy_bypass": 276
+      },
+      "row_type": "rk3576_refresh_paper1_v1_physical_run",
+      "scene_variant": "forest_outpost",
+      "selected_method_counts": {
+        "bicubic": 276,
+        "stage_abc": 24
+      },
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30,
+      "variant": "renderer_deadline_refresh_v1"
+    },
+    {
+      "accepted_neural_fraction": 0.06333333333333334,
+      "deadline_miss_count": 5,
+      "deadline_ms": 100.0,
+      "display_fps": 30.012496203002385,
+      "display_target_met": true,
+      "frame_count": 300,
+      "mean_backend_gpu_compose_ms": 32.940561208333335,
+      "mean_backend_native_total_ms": 31.313197458333335,
+      "mean_backend_npu_inference_ms": 28.694271458333333,
+      "mean_frame_age_ms": 82.65374666666666,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_refresh_selector_ms": 0.8348033333333333,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_completed_frames": 24,
+      "npu_invocations_per_frame": 0.08,
+      "p95_backend_gpu_compose_ms": 53.13832585,
+      "p95_backend_native_total_ms": 40.6077884,
+      "p95_backend_npu_inference_ms": 37.8007355,
+      "p95_frame_age_ms": 128.5657,
+      "p95_refresh_selector_ms": 1.1432000000000002,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 141.09439,
+      "p99_selector_ms": 0.0,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "refresh_action_counts": {
+        "bypass": 276,
+        "submit": 24
+      },
+      "refresh_reason_counts": {
+        "latest_frame_only_context_busy": 48,
+        "predicted_refresh_would_be_stale": 228,
+        "refresh_due_capacity_available": 24
+      },
+      "renderer_priority_fraction": 1.0,
+      "route_status_counts": {
+        "accepted_neural": 19,
+        "client_late_neural_discarded": 5,
+        "refresh_policy_bypass": 276
+      },
+      "row_type": "rk3576_refresh_paper1_v1_physical_run",
+      "scene_variant": "hud_particles",
+      "selected_method_counts": {
+        "bicubic": 276,
+        "stage_abc": 24
+      },
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30,
+      "variant": "renderer_deadline_refresh_v1"
+    },
+    {
+      "accepted_neural_fraction": 0.13666666666666666,
+      "deadline_miss_count": 9,
+      "deadline_ms": 100.0,
+      "display_fps": 29.998049126871777,
+      "display_target_met": true,
+      "frame_count": 300,
+      "mean_backend_gpu_compose_ms": 33.62991548,
+      "mean_backend_native_total_ms": 29.13274746,
+      "mean_backend_npu_inference_ms": 26.6892285,
+      "mean_frame_age_ms": 87.45139333333334,
+      "mean_metadata_features_ms": 0.0,
+      "mean_metadata_model_ms": 0.0,
+      "mean_refresh_selector_ms": 0.6866066666666667,
+      "mean_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_completed_frames": 50,
+      "npu_invocations_per_frame": 0.16666666666666666,
+      "p95_backend_gpu_compose_ms": 54.05010035,
+      "p95_backend_native_total_ms": 41.15048745,
+      "p95_backend_npu_inference_ms": 38.72690059999999,
+      "p95_frame_age_ms": 127.42855000000002,
+      "p95_refresh_selector_ms": 0.9832000000000001,
+      "p95_selector_ms": 0.0,
+      "p99_frame_age_ms": 137.07957,
+      "p99_selector_ms": 0.0,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "refresh_action_counts": {
+        "bypass": 250,
+        "submit": 50
+      },
+      "refresh_reason_counts": {
+        "latest_frame_only_context_busy": 98,
+        "predicted_refresh_would_be_stale": 152,
+        "refresh_due_capacity_available": 50
+      },
+      "renderer_priority_fraction": 0.9966666666666667,
+      "route_status_counts": {
+        "accepted_neural": 41,
+        "client_late_neural_discarded": 9,
+        "refresh_policy_bypass": 250
+      },
+      "row_type": "rk3576_refresh_paper1_v1_physical_run",
+      "scene_variant": "reflective_plaza",
+      "selected_method_counts": {
+        "bicubic": 250,
+        "stage_abc": 50
+      },
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30,
+      "variant": "renderer_deadline_refresh_v1"
+    }
+  ],
+  "schema_version": 2
+}

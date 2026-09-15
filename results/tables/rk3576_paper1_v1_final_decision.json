@@ -1,0 +1,321 @@
+{
+  "decision": "reject_paper1_renderer_deadline_claim",
+  "direct_readback_validation": {
+    "all_frames_aligned": true,
+    "maximum_allowed_input_difference_lsb": 1,
+    "maximum_observed_input_difference_lsb": 1,
+    "vertical_flip_applied": true
+  },
+  "evidence_boundary": "physical_rk3576_five_scene_runtime_and_frame_aligned_quality",
+  "experiment_id": "rk3576_paper1_v1_final_decision",
+  "failure_reasons": [
+    "primary_720p_runtime_gate_failed",
+    "no_720p_neural_frame_met_33_33ms_deadline",
+    "strict_displayed_quality_gate_failed",
+    "strict_policy_did_not_beat_bicubic_every_scene"
+  ],
+  "overall_gate_passed": false,
+  "physical_scope": {
+    "power_measured": false,
+    "quality_frames": 1500,
+    "runtime_frames": 31500,
+    "runtime_rows": 105,
+    "scene_count": 5
+  },
+  "primary_720p_gate": {
+    "best_fixed_strict_same_frame_neural_fraction": 0.0,
+    "decision": "reject_refresh_policy_runtime_gate",
+    "display_change_percent": 61.161039833394284,
+    "display_pass": true,
+    "energy_gate_status": "pending_external_meter",
+    "frame_age_pass": true,
+    "npu_work_reduction_percent": 85.86666666666667,
+    "p95_frame_age_change_vs_best_fixed_percent": -5.629707222309315,
+    "quality_gate_status": "pending_fresh_trace_quality_evaluation",
+    "refresh_selector_mean_ms": 0.7111706666666666,
+    "row_type": "rk3576_refresh_paper1_v1_gate",
+    "runtime_gate_pass": false,
+    "selector_overhead_pass": true,
+    "strict_same_frame_gain": 0.0,
+    "strict_same_frame_gain_pass": false,
+    "strict_same_frame_neural_fraction": 0.0,
+    "work_reduction_pass": true
+  },
+  "publication_classification": "frozen_negative_boundary_result",
+  "quality_upper_bound": {
+    "always_neural_lpips": 0.03454051196575165,
+    "always_neural_psnr_db": 31.971156557011504,
+    "always_neural_ssim": 0.9761236489216486,
+    "bicubic_lpips": 0.05451383478939533,
+    "bicubic_psnr_db": 31.959460258082494,
+    "bicubic_ssim": 0.977754865805308,
+    "lpips_reduction_percent": 36.63899797327985,
+    "neural_psnr_margin_db": 0.01169629892901014
+  },
+  "retuning_policy": "do_not_retune_on_these_frozen_physical_traces",
+  "runtime_summary": [
+    {
+      "display_fps": 29.992519939919468,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 1.0,
+      "p95_frame_age_ms": 92.28196,
+      "profile_id": "always_neural",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.3433333333333333,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 29.996958428195722,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.5,
+      "p95_frame_age_ms": 87.37604,
+      "profile_id": "fixed_period_2",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.10866666666666666,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 29.998062783521156,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.3333333333333333,
+      "p95_frame_age_ms": 92.01835000000001,
+      "profile_id": "fixed_period_3",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.10800000000000001,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.012701003329955,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 84.41517,
+      "profile_id": "gpu_bicubic",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.013088766863717,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 83.89913,
+      "profile_id": "gpu_lanczos",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.00737424707134,
+      "mean_refresh_selector_ms": 0.6068100000000001,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.61,
+      "p95_frame_age_ms": 90.23152999999999,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.174,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.002041640962176,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 1.0,
+      "p95_frame_age_ms": 93.41839,
+      "profile_id": "renderer_metadata_adverse",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.3026666666666667,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 44.82276103220483,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 1.0,
+      "p95_frame_age_ms": 94.07524,
+      "profile_id": "always_neural",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 53.84670584350995,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.5,
+      "p95_frame_age_ms": 80.79193000000001,
+      "profile_id": "fixed_period_2",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 54.28122837041493,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.3333333333333333,
+      "p95_frame_age_ms": 70.79858,
+      "profile_id": "fixed_period_3",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 60.03300580505898,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 50.621430000000004,
+      "profile_id": "gpu_bicubic",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 59.99660142865129,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 51.6509,
+      "profile_id": "gpu_lanczos",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 54.356671163386956,
+      "mean_refresh_selector_ms": 0.5276326666666666,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.33666666666666667,
+      "p95_frame_age_ms": 72.31225000000002,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 48.384619235703504,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_180p_to_360p",
+      "npu_invocations_per_frame": 0.89,
+      "p95_frame_age_ms": 91.32233000000001,
+      "profile_id": "renderer_metadata_adverse",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 60
+    },
+    {
+      "display_fps": 18.620409250411605,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 1.0,
+      "p95_frame_age_ms": 207.37635,
+      "profile_id": "always_neural",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 25.85335750954052,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.5,
+      "p95_frame_age_ms": 171.13215,
+      "profile_id": "fixed_period_2",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 27.000651298534798,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.3333333333333333,
+      "p95_frame_age_ms": 134.89245,
+      "profile_id": "fixed_period_3",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.00242820321197,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 85.18713,
+      "profile_id": "gpu_bicubic",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.003958444923505,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.0,
+      "p95_frame_age_ms": 85.05372,
+      "profile_id": "gpu_lanczos",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 30.00884516919688,
+      "mean_refresh_selector_ms": 0.7111706666666666,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.14133333333333334,
+      "p95_frame_age_ms": 127.29840000000002,
+      "profile_id": "renderer_deadline_refresh_v1",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    },
+    {
+      "display_fps": 22.931256506382798,
+      "mean_refresh_selector_ms": 0.0,
+      "mode_id": "mode_360p_to_720p",
+      "npu_invocations_per_frame": 0.71,
+      "p95_frame_age_ms": 190.19375,
+      "profile_id": "renderer_metadata_adverse",
+      "scene_count": 5,
+      "strict_same_frame_neural_fraction": 0.0,
+      "target_fps": 30
+    }
+  ],
+  "schema_version": 1,
+  "source_reports": {
+    "quality_sha256": "ea0ea5a9cc6cefbf76e524c8f7e5f8a690566fa9051de31304a944e69cb23397",
+    "runtime_sha256": "c4fa4b5b3469338185075596209db0c8fffd62dbc1f01e38e12335c7f6eb5c8e"
+  },
+  "strict_policy_quality": {
+    "equals_bicubic_at_720p_deadline": true,
+    "lpips": 0.05451383478939533,
+    "psnr_db": 31.959460258082494,
+    "ssim": 0.977754865805308
+  },
+  "strict_quality_gate": {
+    "beats_bicubic_every_scene": false,
+    "decision": "reject_refresh_quality_gate",
+    "maximum_psnr_drop_vs_always_neural_db": 0.1,
+    "overall_passed": false,
+    "psnr_drop_vs_always_neural_by_scene_db": {
+      "barrier_yard": -0.10112792785863789,
+      "corridor_neon": 0.059768444126753195,
+      "forest_outpost": 0.08295514290109196,
+      "hud_particles": 0.023720701553902046,
+      "reflective_plaza": -0.00683486607805861
+    },
+    "psnr_margin_over_bicubic_by_scene_db": {
+      "barrier_yard": 0.0,
+      "corridor_neon": 0.0,
+      "forest_outpost": 0.0,
+      "hud_particles": 0.0,
+      "reflective_plaza": 0.0
+    },
+    "within_tolerance_every_scene": true
+  }
+}

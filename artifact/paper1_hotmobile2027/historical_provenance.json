@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "release_source_commit": "f7416ae33ccd81ce2d6d1dbaaf34c96c2e76fa46",
+  "historical_repository_id": "neural-upscaling-hw-sw-codesign",
+  "preservation_rule": "Each listed file was verified byte-identical at the same repository-relative path before exclusion from the V1 reviewer release.",
+  "excluded_files": [
+    {
+      "path": "configs/paper1_hotmobile2027_confirmatory.yaml",
+      "reason": "board and capture configuration with a private host",
+      "sha256": "20efe948513655b0983604ce1ad26da01a0ac371bf994132c67045a454775f72",
+      "size_bytes": 5472
+    },
+    {
+      "path": "configs/paper1_temporal_reprojection_v2.yaml",
+      "reason": "development-only V2 execution configuration",
+      "sha256": "f346ffe48814fa91033d35bfac05af07579cc625f6e9e07a1b33e753758f31a6",
+      "size_bytes": 2418
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/SConstruct",
+      "reason": "non-buildable board bridge without external SDK sources",
+      "sha256": "94df10cbb666b5cd51c05f09651678718a054faa714fa1fdc3b4b786ca38f32e",
+      "size_bytes": 1131
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/build_profile.json",
+      "reason": "board bridge build metadata",
+      "sha256": "99e4886146554c1a075a076357d369d1c837be67712b4ccdc13b010e39ec4408",
+      "size_bytes": 81
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/rk3576_native_bridge.gdextension",
+      "reason": "board-only extension descriptor",
+      "sha256": "befc90dee70be10c073128cb2b198925cfe0fc363b26e881498be77b698ebe63",
+      "size_bytes": 269
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/rk3576_native_bridge.gdextension.uid",
+      "reason": "board-only extension editor identifier",
+      "sha256": "5407cf654c5563e48a2b5a006afd7db0117d3c875d71754a2577cfc5f3d2678f",
+      "size_bytes": 19
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/src/register_types.cpp",
+      "reason": "board bridge source requiring external SDK sources",
+      "sha256": "a79f7e29d3cf5c6275e2c696f69e1a2c54d93f8f7922e0a2c5ac3e9d596c3bf2",
+      "size_bytes": 1453
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/src/rk3576_native_bridge.cpp",
+      "reason": "board bridge source requiring external SDK sources",
+      "sha256": "148123cf942c319ae25b385e3d61035f90d424545ac4e9f05ef12ad17cdb3ded",
+      "size_bytes": 62103
+    },
+    {
+      "path": "demo/godot_upscaling_benchmark/native_bridge/src/rk3576_native_bridge.h",
+      "reason": "board bridge source requiring external SDK sources",
+      "sha256": "4b82ea6be577e7738622cf560e7abccb12376dc0cab9b1f3efd8959a92fa1531",
+      "size_bytes": 6053
+    },
+    {
+      "path": "docs/paper1_temporal_reprojection_v2_literature_review.md",
+      "reason": "development-only literature notebook",
+      "sha256": "a2e643159b7867f9e2df7bf456c896bc04168e6404f96a02974bf85c23cebc38",
+      "size_bytes": 5479
+    },
+    {
+      "path": "pyproject.toml",
+      "reason": "whole-project development packaging metadata",
+      "sha256": "0e24cac11d38eece74473d68117492173b69f25718f135f47b3b90869f05100f",
+      "size_bytes": 422
+    },
+    {
+      "path": "results/analysis/paper1_hotmobile2027_reprojection.jsonl",
+      "reason": "unused detailed reprojection observations; frozen summary retained",
+      "sha256": "9de1bad04e37cd05f35b73a04c187319fac081cc8c34c4707241b693a9bc899b",
+      "size_bytes": 992826
+    },
+    {
+      "path": "results/models/student_npu_w24_int8/rknn_int8/student_npu_w24_int8_subpixel_residual_subpixel_residual_int8_rk3576.rknn",
+      "reason": "board model binary not used by offline replay",
+      "sha256": "bc859c71480040e5f49ca9c65389c0d3a5ef17f63b9cd2d9e281368771dd72b6",
+      "size_bytes": 165346
+    },
+    {
+      "path": "results/models/student_npu_w24_int8/rknn_int8_180p/student_npu_w24_180p_int8_subpixel_residual_int8_rk3576.rknn",
+      "reason": "board model binary not used by offline replay",
+      "sha256": "450dd916af732c2f7a4d77acda973c70e789147f29b9a8c705e301735a555d02",
+      "size_bytes": 86754
+    },
+    {
+      "path": "results/models/student_npu_w24_int8/student_npu_w24_runtime_dynamic.onnx",
+      "reason": "inference binary not used by offline replay; compact model manifest retained",
+      "sha256": "647fd628dc33b937b0c001b4c16f9481f6392485103aaa070fd12c75597ad0d9",
+      "size_bytes": 35629
+    },
+    {
+      "path": "scripts/capture_paper1_hotmobile2027_confirmatory.ps1",
+      "reason": "machine-specific capture script",
+      "sha256": "0efc63ce0789a781f37b95916a87c1892f2760678e035164450fd48d90a79b6a",
+      "size_bytes": 6221
+    },
+    {
+      "path": "scripts/package_paper1_hotmobile2027.ps1",
+      "reason": "maintainer-only fail-closed allowlist cloning script",
+      "sha256": "295f700615341277f1585138d7e51b964f76f7aa0011a94b399317ef97865e2b",
+      "size_bytes": 5322
+    },
+    {
+      "path": "scripts/rk3576/deploy_paper1_hotmobile2027.py",
+      "reason": "private-board deployment script",
+      "sha256": "bb2a219e9535dae688956397ac392f5d6da105d843c5d463ce9fd76df2e434c6",
+      "size_bytes": 7024
+    },
+    {
+      "path": "scripts/rk3576/run_paper1_hotmobile2027_confirmatory.sh",
+      "reason": "board execution script not used by offline replay",
+      "sha256": "265dae6a30fce4975ff2791b6b452843a25e03cc8e368101cfa33fa840213be4",
+      "size_bytes": 3519
+    },
+    {
+      "path": "src/data/prepare_temporal_reprojection_traces.py",
+      "reason": "experiment-side trace preparation not used by offline replay",
+      "sha256": "1c41f4b17a18a3ee2e885dba50782899902f521e5a4e265cea18237c53e69fd3",
+      "size_bytes": 15225
+    },
+    {
+      "path": "src/eval/evaluate_paper1_hotmobile_confirmatory.py",
+      "reason": "experiment-side evaluator not used by frozen-summary replay",
+      "sha256": "20cd4acab02fac89fe6af075cadcbfee7a1f5ac4a3fb24ee436898a904739666",
+      "size_bytes": 10671
+    },
+    {
+      "path": "src/eval/evaluate_temporal_reprojection_oracle.py",
+      "reason": "experiment-side oracle evaluator not used by frozen-summary replay",
+      "sha256": "cddaf46cb3cfdfdde9f9b73444fd030ad56c2c6503095e9e3c5cb78354477aed",
+      "size_bytes": 28759
+    },
+    {
+      "path": "src/runtime/temporal_residual_reprojection.py",
+      "reason": "rejected V2 mechanism implementation not used by offline replay",
+      "sha256": "a9249418246d0341cda7de39cac47206c0738bd82d64956922e8fd689140dd69",
+      "size_bytes": 11482
+    },
+    {
+      "path": "src/utils/metrics.py",
+      "reason": "experiment-side image metrics not used by frozen-summary replay",
+      "sha256": "976f83ae114775ec1bd23a94bd17e81d064476b347fb1dad8f1b0d811bc4791e",
+      "size_bytes": 23113
+    },
+    {
+      "path": "tests/test_evaluate_paper1_hotmobile_confirmatory.py",
+      "reason": "experiment-side evaluator test outside reviewer replay closure",
+      "sha256": "e0f95b79ff58bb4c16ef3c452f1e8e65c980e0e949c5e711baea4b377efe2c6a",
+      "size_bytes": 1581
+    },
+    {
+      "path": "tests/test_paper1_hotmobile2027_confirmatory.py",
+      "reason": "capture and board configuration test outside reviewer replay closure",
+      "sha256": "eb89c17378ba6e1f3cd29473387d5be0df54f8fd8ad937fd16ff1f075479c240",
+      "size_bytes": 3281
+    }
+  ]
+}

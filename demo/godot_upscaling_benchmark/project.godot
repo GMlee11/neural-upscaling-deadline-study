@@ -1,0 +1,64 @@
+; Interactive and deterministic benchmark for roadmap steps 11-14.
+config_version=5
+
+[application]
+config/name="Adaptive Embedded Upscaling Benchmark"
+run/main_scene="res://main.tscn"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[input]
+move_forward={
+"deadzone": 0.15,
+"events": [Object(InputEventKey,"physical_keycode":87), Object(InputEventJoypadMotion,"axis":1,"axis_value":-1.0)]
+}
+move_backward={
+"deadzone": 0.15,
+"events": [Object(InputEventKey,"physical_keycode":83), Object(InputEventJoypadMotion,"axis":1,"axis_value":1.0)]
+}
+move_left={
+"deadzone": 0.15,
+"events": [Object(InputEventKey,"physical_keycode":65), Object(InputEventJoypadMotion,"axis":0,"axis_value":-1.0)]
+}
+move_right={
+"deadzone": 0.15,
+"events": [Object(InputEventKey,"physical_keycode":68), Object(InputEventJoypadMotion,"axis":0,"axis_value":1.0)]
+}
+look_left={
+"deadzone": 0.15,
+"events": [Object(InputEventJoypadMotion,"axis":2,"axis_value":-1.0)]
+}
+look_right={
+"deadzone": 0.15,
+"events": [Object(InputEventJoypadMotion,"axis":2,"axis_value":1.0)]
+}
+look_up={
+"deadzone": 0.15,
+"events": [Object(InputEventJoypadMotion,"axis":3,"axis_value":-1.0)]
+}
+look_down={
+"deadzone": 0.15,
+"events": [Object(InputEventJoypadMotion,"axis":3,"axis_value":1.0)]
+}
+cycle_backend={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":9), Object(InputEventJoypadButton,"button_index":5)]
+}
+toggle_mode={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":77), Object(InputEventJoypadButton,"button_index":4)]
+}
+toggle_split={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":86), Object(InputEventJoypadButton,"button_index":3)]
+}
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.015, 0.022, 0.04, 1)

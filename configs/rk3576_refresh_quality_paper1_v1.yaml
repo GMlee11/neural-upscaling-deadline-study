@@ -1,0 +1,43 @@
+# Quality is evaluated on exact board-rendered pairs at a relaxed cadence and
+# combined with decisions from the independent 30-FPS performance matrix.
+experiment_id: rk3576_refresh_quality_paper1_v1
+scene_variants:
+  - corridor_neon
+  - forest_outpost
+  - barrier_yard
+  - reflective_plaza
+  - hud_particles
+frame_count: 300
+performance_root: results/rk3576/paper1_refresh_v1
+quality_capture_root: results/rk3576/paper1_refresh_quality_v1/always_neural
+mode_id: mode_360p_to_720p
+target_fps: 30
+# Validation owns one render target at a time.  A deeper queue can advance the
+# camera before the render-thread DMA capture consumes the submitted texture,
+# which would pair a neural output with the wrong LR/HR reference.
+pipeline_depth: 1
+# GLES direct-texture readback returns physical rows in bottom-up order. The
+# on-screen sampler presents the texture correctly; diagnostic PNGs therefore
+# require one explicit vertical flip before comparison with top-down references.
+direct_readback_vertical_flip: true
+maximum_direct_input_difference_lsb: 1
+profiles:
+  - gpu_bicubic
+  - gpu_lanczos
+  - always_neural
+  - fixed_period_2
+  - fixed_period_3
+  - renderer_metadata_adverse
+  - renderer_deadline_refresh_v1
+lpips_sample_stride: 30
+acceptance:
+  proposed_profile: renderer_deadline_refresh_v1
+  maximum_psnr_drop_vs_always_neural_db: 0.10
+  require_every_scene: true
+  require_beat_bicubic_every_scene: true
+output:
+  observations_jsonl: results/analysis/rk3576_refresh_quality_paper1_v1.jsonl
+  report_json: results/tables/rk3576_refresh_quality_paper1_v1.json
+  report_markdown: results/tables/rk3576_refresh_quality_paper1_v1.md
+  database_path: data/research.sqlite3
+  record_set: quality.rk3576.refresh_scheduler.paper1_v1

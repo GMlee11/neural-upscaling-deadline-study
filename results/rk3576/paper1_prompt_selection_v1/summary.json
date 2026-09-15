@@ -1,0 +1,667 @@
+{
+  "status": "COMPLETE",
+  "freeze_sha256": "c4d733744e3ce10305d16155bc00cb3bbff41871c558b1857d6cd55f416598c8",
+  "cells": [
+    {
+      "repetition": 1,
+      "width": 320,
+      "control": "bicubic",
+      "mode": "ordered",
+      "index": 0,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.171233820424437,
+      "source_capture_rate_fps": 30.147237494693986,
+      "draw_interval_ms": {
+        "n": 1245,
+        "min": 5.47,
+        "median": 7.603,
+        "max": 27.854,
+        "mean": 7.9836168674698795
+      },
+      "classical_draws": 1245
+    },
+    {
+      "repetition": 1,
+      "width": 320,
+      "control": "bicubic",
+      "mode": "prompt",
+      "index": 1,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.16043845234726,
+      "source_capture_rate_fps": 30.137267694834662,
+      "draw_interval_ms": {
+        "n": 1238,
+        "min": 5.644,
+        "median": 7.5955,
+        "max": 28.23,
+        "mean": 8.031571890145395
+      },
+      "classical_draws": 1238
+    },
+    {
+      "repetition": 1,
+      "width": 320,
+      "control": "always",
+      "mode": "prompt",
+      "index": 2,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 184,
+      "eventually_selected": 300,
+      "timely_selected_pre": 31,
+      "timely_selected_post": 6,
+      "timely_selected_post_fraction": 0.02,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 25.686,
+        "median": 40.588,
+        "max": 68.838,
+        "mean": 41.271543333333334
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 29.995,
+        "median": 48.0295,
+        "max": 75.617,
+        "mean": 48.1515
+      },
+      "callback_to_assignment_ms": {
+        "n": 300,
+        "min": 0.139,
+        "median": 0.185,
+        "max": 22.75,
+        "mean": 3.5546333333333333
+      },
+      "source_completion_rate_fps": 30.098180264021238,
+      "source_capture_rate_fps": 30.144547642751824,
+      "draw_interval_ms": {
+        "n": 1010,
+        "min": 4.509,
+        "median": 9.3235,
+        "max": 24.001,
+        "mean": 9.865012871287128
+      },
+      "classical_draws": 710
+    },
+    {
+      "repetition": 1,
+      "width": 320,
+      "control": "always",
+      "mode": "ordered",
+      "index": 3,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 84,
+      "eventually_selected": 300,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 43.605,
+        "median": 92.71350000000001,
+        "max": 135.613,
+        "mean": 96.71735666666666
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 47.579,
+        "median": 98.0125,
+        "max": 143.597,
+        "mean": 103.09658666666667
+      },
+      "callback_to_assignment_ms": {
+        "n": 300,
+        "min": 0.317,
+        "median": 53.8715,
+        "max": 85.025,
+        "mean": 55.83817
+      },
+      "source_completion_rate_fps": 26.52903169211184,
+      "source_capture_rate_fps": 26.563565679837605,
+      "draw_interval_ms": {
+        "n": 1239,
+        "min": 4.496,
+        "median": 8.905,
+        "max": 24.43,
+        "mean": 9.12400807102502
+      },
+      "classical_draws": 640
+    },
+    {
+      "repetition": 1,
+      "width": 640,
+      "control": "always",
+      "mode": "ordered",
+      "index": 4,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 0,
+      "eventually_selected": 299,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "accepted_neural": 299,
+        "client_late_neural_discarded": 1
+      },
+      "selection_age_pre_ms": {
+        "n": 299,
+        "min": 87.638,
+        "median": 174.845,
+        "max": 195.663,
+        "mean": 172.7538093645485
+      },
+      "selection_age_post_ms": {
+        "n": 299,
+        "min": 91.59,
+        "median": 183.193,
+        "max": 206.427,
+        "mean": 181.01233779264214
+      },
+      "callback_to_assignment_ms": {
+        "n": 300,
+        "min": 0.291,
+        "median": 72.5425,
+        "max": 88.856,
+        "mean": 72.94004666666666
+      },
+      "source_completion_rate_fps": 14.965554531412774,
+      "source_capture_rate_fps": 14.989205766603128,
+      "draw_interval_ms": {
+        "n": 1338,
+        "min": 4.587,
+        "median": 12.258,
+        "max": 30.864,
+        "mean": 14.97945216741405
+      },
+      "classical_draws": 741
+    },
+    {
+      "repetition": 1,
+      "width": 640,
+      "control": "always",
+      "mode": "prompt",
+      "index": 5,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 0,
+      "eventually_selected": 247,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "client_late_neural_discarded": 45,
+        "accepted_neural": 247,
+        "prompt_superseded": 8
+      },
+      "selection_age_pre_ms": {
+        "n": 247,
+        "min": 65.378,
+        "median": 97.887,
+        "max": 140.93,
+        "mean": 99.75594736842105
+      },
+      "selection_age_post_ms": {
+        "n": 247,
+        "min": 69.001,
+        "median": 110.96,
+        "max": 148.5,
+        "mean": 110.70668016194332
+      },
+      "callback_to_assignment_ms": {
+        "n": 247,
+        "min": 0.136,
+        "median": 0.384,
+        "max": 35.405,
+        "mean": 4.235113360323886
+      },
+      "source_completion_rate_fps": 21.775553993683783,
+      "source_capture_rate_fps": 21.86419541296493,
+      "draw_interval_ms": {
+        "n": 764,
+        "min": 5.067,
+        "median": 14.798,
+        "max": 58.238,
+        "mean": 18.028552356020942
+      },
+      "classical_draws": 517
+    },
+    {
+      "repetition": 1,
+      "width": 640,
+      "control": "bicubic",
+      "mode": "prompt",
+      "index": 6,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.164944935401266,
+      "source_capture_rate_fps": 30.152202063721585,
+      "draw_interval_ms": {
+        "n": 1115,
+        "min": 6.814,
+        "median": 8.713,
+        "max": 21.353,
+        "mean": 8.917267264573992
+      },
+      "classical_draws": 1115
+    },
+    {
+      "repetition": 1,
+      "width": 640,
+      "control": "bicubic",
+      "mode": "ordered",
+      "index": 7,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.15831911201041,
+      "source_capture_rate_fps": 30.1462253245836,
+      "draw_interval_ms": {
+        "n": 1120,
+        "min": 6.644,
+        "median": 8.7375,
+        "max": 22.227,
+        "mean": 8.879000892857142
+      },
+      "classical_draws": 1120
+    },
+    {
+      "repetition": 2,
+      "width": 320,
+      "control": "bicubic",
+      "mode": "prompt",
+      "index": 8,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.171673806793272,
+      "source_capture_rate_fps": 30.147346922560843,
+      "draw_interval_ms": {
+        "n": 1241,
+        "min": 5.688,
+        "median": 7.535,
+        "max": 22.807,
+        "mean": 8.009892828364222
+      },
+      "classical_draws": 1241
+    },
+    {
+      "repetition": 2,
+      "width": 320,
+      "control": "bicubic",
+      "mode": "ordered",
+      "index": 9,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.17364935202088,
+      "source_capture_rate_fps": 30.15108922574524,
+      "draw_interval_ms": {
+        "n": 1228,
+        "min": 5.567,
+        "median": 7.6365,
+        "max": 23.709,
+        "mean": 8.09324348534202
+      },
+      "classical_draws": 1228
+    },
+    {
+      "repetition": 2,
+      "width": 320,
+      "control": "always",
+      "mode": "ordered",
+      "index": 10,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 108,
+      "eventually_selected": 300,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 61.109,
+        "median": 104.025,
+        "max": 136.902,
+        "mean": 103.69514666666667
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 64.378,
+        "median": 110.7315,
+        "max": 143.317,
+        "mean": 110.33855666666666
+      },
+      "callback_to_assignment_ms": {
+        "n": 300,
+        "min": 7.728,
+        "median": 60.6375,
+        "max": 95.44,
+        "mean": 60.50062333333333
+      },
+      "source_completion_rate_fps": 24.831608584982373,
+      "source_capture_rate_fps": 24.905089950687923,
+      "draw_interval_ms": {
+        "n": 1246,
+        "min": 4.989,
+        "median": 9.381499999999999,
+        "max": 29.968,
+        "mean": 9.693645264847513
+      },
+      "classical_draws": 647
+    },
+    {
+      "repetition": 2,
+      "width": 320,
+      "control": "always",
+      "mode": "prompt",
+      "index": 11,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 139,
+      "eventually_selected": 300,
+      "timely_selected_pre": 37,
+      "timely_selected_post": 5,
+      "timely_selected_post_fraction": 0.016666666666666666,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 25.953,
+        "median": 42.1695,
+        "max": 81.319,
+        "mean": 45.718043333333334
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 30.481,
+        "median": 50.6555,
+        "max": 89.024,
+        "mean": 52.78558666666667
+      },
+      "callback_to_assignment_ms": {
+        "n": 300,
+        "min": 0.129,
+        "median": 0.1695,
+        "max": 35.053,
+        "mean": 3.5702066666666665
+      },
+      "source_completion_rate_fps": 30.07768162834152,
+      "source_capture_rate_fps": 30.137711197066864,
+      "draw_interval_ms": {
+        "n": 926,
+        "min": 4.753,
+        "median": 10.434,
+        "max": 33.151,
+        "mean": 10.766833693304536
+      },
+      "classical_draws": 626
+    },
+    {
+      "repetition": 2,
+      "width": 640,
+      "control": "always",
+      "mode": "prompt",
+      "index": 12,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 0,
+      "eventually_selected": 81,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "accepted_neural": 81,
+        "client_late_neural_discarded": 219
+      },
+      "selection_age_pre_ms": {
+        "n": 81,
+        "min": 80.498,
+        "median": 104.072,
+        "max": 143.289,
+        "mean": 106.09525925925927
+      },
+      "selection_age_post_ms": {
+        "n": 81,
+        "min": 86.982,
+        "median": 115.459,
+        "max": 169.302,
+        "mean": 118.23348148148148
+      },
+      "callback_to_assignment_ms": {
+        "n": 81,
+        "min": 0.142,
+        "median": 0.303,
+        "max": 30.906,
+        "mean": 3.827074074074074
+      },
+      "source_completion_rate_fps": 18.21014765334022,
+      "source_capture_rate_fps": 18.285266423364583,
+      "draw_interval_ms": {
+        "n": 728,
+        "min": 5.372,
+        "median": 15.8875,
+        "max": 93.285,
+        "mean": 22.62793956043956
+      },
+      "classical_draws": 647
+    },
+    {
+      "repetition": 2,
+      "width": 640,
+      "control": "always",
+      "mode": "ordered",
+      "index": 13,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "response_eligible": 0,
+      "eventually_selected": 95,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "accepted_neural": 95,
+        "client_late_neural_discarded": 205
+      },
+      "selection_age_pre_ms": {
+        "n": 95,
+        "min": 119.365,
+        "median": 194.774,
+        "max": 242.957,
+        "mean": 194.83587368421053
+      },
+      "selection_age_post_ms": {
+        "n": 95,
+        "min": 127.856,
+        "median": 203.67,
+        "max": 252.356,
+        "mean": 203.8329052631579
+      },
+      "callback_to_assignment_ms": {
+        "n": 300,
+        "min": 0.262,
+        "median": 86.75450000000001,
+        "max": 131.376,
+        "mean": 88.35476666666666
+      },
+      "source_completion_rate_fps": 12.75231789318106,
+      "source_capture_rate_fps": 12.777746106441274,
+      "draw_interval_ms": {
+        "n": 1389,
+        "min": 4.034,
+        "median": 12.483,
+        "max": 64.436,
+        "mean": 16.93504967602592
+      },
+      "classical_draws": 1200
+    },
+    {
+      "repetition": 2,
+      "width": 640,
+      "control": "bicubic",
+      "mode": "ordered",
+      "index": 14,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.11284185227302,
+      "source_capture_rate_fps": 30.145927461639307,
+      "draw_interval_ms": {
+        "n": 1028,
+        "min": 6.567,
+        "median": 8.925,
+        "max": 29.624,
+        "mean": 9.68893579766537
+      },
+      "classical_draws": 1028
+    },
+    {
+      "repetition": 2,
+      "width": 640,
+      "control": "bicubic",
+      "mode": "prompt",
+      "index": 15,
+      "status": "COMPLETE",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "response_eligible": 0,
+      "eventually_selected": 0,
+      "timely_selected_pre": 0,
+      "timely_selected_post": 0,
+      "timely_selected_post_fraction": 0.0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "callback_to_assignment_ms": null,
+      "source_completion_rate_fps": 30.149359929088707,
+      "source_capture_rate_fps": 30.13944887951307,
+      "draw_interval_ms": {
+        "n": 1034,
+        "min": 6.643,
+        "median": 8.9215,
+        "max": 33.319,
+        "mean": 9.62056576402321
+      },
+      "classical_draws": 1034
+    }
+  ]
+}

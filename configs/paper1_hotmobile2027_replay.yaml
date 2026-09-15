@@ -1,0 +1,23 @@
+# Reviewer-only replay map. Frozen thresholds, board hosts, capture commands,
+# and model binaries intentionally remain outside this minimal release.
+workshop_paper:
+  physical_decision_json: results/tables/rk3576_paper1_v1_final_decision.json
+  reprojection_json: results/tables/paper1_hotmobile2027_reprojection.json
+  canonical_v1_sources:
+    scheduler_config: configs/rk3576_refresh_scheduler_paper1_v1.yaml
+    quality_config: configs/rk3576_refresh_quality_paper1_v1.yaml
+    policy: results/models/rk3576_neural_refresh_paper1_v1.json
+    evidence_manifest: results/manifests/rk3576_paper1_v1_evidence_manifest.json
+    scheduler_report: results/tables/rk3576_refresh_scheduler_paper1_v1.json
+    quality_report: results/tables/rk3576_refresh_quality_paper1_v1.json
+    result_note: docs/paper1_renderer_deadline_refresh_v1.md
+  representative_latency_traces:
+    - profile_id: always_neural
+      mode_id: mode_180p_to_360p
+      path: results/rk3576/phase13_npu_width_integrated/student_npu_w24_int8/always_full/mode_180p_to_360p/30fps/buffers3/godot_frames.jsonl
+    - profile_id: always_neural
+      mode_id: mode_360p_to_720p
+      path: results/rk3576/phase13_npu_width_integrated/student_npu_w24_int8/always_full/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl
+  report_json: results/tables/paper1_hotmobile2027_workshop.json
+  report_markdown: results/tables/paper1_hotmobile2027_workshop.md
+  generated_tex: docs/paper/generated/paper1_hotmobile2027.tex

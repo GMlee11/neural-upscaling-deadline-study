@@ -1,0 +1,40 @@
+# Frozen physical gate for age-bounded/latest-frame neural refresh.
+experiment_id: rk3576_refresh_scheduler_paper1_v1
+result_root: results/rk3576/paper1_refresh_v1
+frame_count: 300
+scene_variants:
+  - corridor_neon
+  - forest_outpost
+  - barrier_yard
+  - reflective_plaza
+  - hud_particles
+workloads:
+  - mode_id: mode_180p_to_360p
+    target_fps: 30
+  - mode_id: mode_180p_to_360p
+    target_fps: 60
+  - mode_id: mode_360p_to_720p
+    target_fps: 30
+profiles:
+  - gpu_bicubic
+  - gpu_lanczos
+  - always_neural
+  - fixed_period_2
+  - fixed_period_3
+  - renderer_metadata_adverse
+  - renderer_deadline_refresh_v1
+gate:
+  primary_mode_id: mode_360p_to_720p
+  primary_target_fps: 30
+  maximum_display_fps_regression_percent: 1.0
+  minimum_npu_work_reduction_percent: 25.0
+  minimum_strict_same_frame_gain_vs_fixed_period: 0.05
+  maximum_refresh_selector_mean_ms: 1.0
+  maximum_p95_frame_age_regression_percent: 0.0
+  quality_gate_status: pending_fresh_trace_quality_evaluation
+  energy_gate_status: pending_external_meter
+output:
+  report_json: results/tables/rk3576_refresh_scheduler_paper1_v1.json
+  report_markdown: results/tables/rk3576_refresh_scheduler_paper1_v1.md
+  database_path: data/research.sqlite3
+  record_set: hardware.rk3576.refresh_scheduler.paper1_v1

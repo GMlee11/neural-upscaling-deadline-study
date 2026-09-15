@@ -1,0 +1,278 @@
+{
+  "all_pass": true,
+  "cases": [
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 0,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 0,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 1,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 1,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 2,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 2,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 1,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 3,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 0,
+      "source_viewport_max_abs": 7,
+      "input_max_abs": 1,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 1,
+      "composition_mae": 0.0071961805555555555,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 4,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 1,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 5,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 2,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 6,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 0,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 1,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00154144421685487,
+      "output_zero_point": 30,
+      "pattern": 7,
+      "shape": [
+        320,
+        180
+      ],
+      "slot": 1,
+      "source_viewport_max_abs": 7,
+      "input_max_abs": 1,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 1,
+      "composition_mae": 0.0071961805555555555,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 0,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 0,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 1,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 1,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 2,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 2,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 3,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 0,
+      "source_viewport_max_abs": 7,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 1,
+      "composition_mae": 0.010172164351851852,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 4,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 1,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 5,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 2,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 6,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 0,
+      "source_viewport_max_abs": 0,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 0,
+      "composition_mae": 0.0,
+      "pass": true
+    },
+    {
+      "output_scale": 0.00149495271034539,
+      "output_zero_point": 13,
+      "pattern": 7,
+      "shape": [
+        640,
+        360
+      ],
+      "slot": 1,
+      "source_viewport_max_abs": 7,
+      "input_max_abs": 0,
+      "residual_byte_exact": true,
+      "residual_mismatched_bytes": 0,
+      "composition_max_abs": 1,
+      "composition_mae": 0.010172164351851852,
+      "pass": true
+    }
+  ],
+  "scientific_samples": 0
+}

@@ -1,0 +1,266 @@
+{
+  "capture_byte_count": 767135753,
+  "capture_file_count": 7500,
+  "capture_orientation": "gles_bottom_up_readback_aligned_to_top_down_reference",
+  "capture_sets": [
+    {
+      "byte_count": 5220774,
+      "channel": "lr",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/corridor_neon/mode_360p_to_720p/5fps/buffers1/snapshots/lr",
+      "scene_variant": "corridor_neon",
+      "sha256": "425bc57c0cfecde98f3468316e13ba39665333a7dab47be5b60a543cc5c5531c"
+    },
+    {
+      "byte_count": 11704088,
+      "channel": "native",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/corridor_neon/mode_360p_to_720p/5fps/buffers1/snapshots/native",
+      "scene_variant": "corridor_neon",
+      "sha256": "6164afb6ec0b24abdf866f2b055bfb44137a76403fc99d56c003afd1e99bc6be"
+    },
+    {
+      "byte_count": 55020739,
+      "channel": "output",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/corridor_neon/mode_360p_to_720p/5fps/buffers1/snapshots/output",
+      "scene_variant": "corridor_neon",
+      "sha256": "c45d533a18100a72f00000d99d01a78d03b3c2d0f5da8ce8a4adfe49c89956ff"
+    },
+    {
+      "byte_count": 4631116,
+      "channel": "validation_input",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/corridor_neon/mode_360p_to_720p/5fps/buffers1/snapshots/validation_input",
+      "scene_variant": "corridor_neon",
+      "sha256": "fcd81cc56f4bbe92a78a089553f7e1c296cd08a687e48d9847a94f2af6b86872"
+    },
+    {
+      "byte_count": 69513436,
+      "channel": "residual_payload",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/corridor_neon/mode_360p_to_720p/5fps/buffers1/snapshots/residual_payload",
+      "scene_variant": "corridor_neon",
+      "sha256": "d4273afd0c06bbda9ae8c8c2f48a87d0cc88c349fad79b0cd1d16d4ad6dae9cd"
+    },
+    {
+      "byte_count": 6975256,
+      "channel": "lr",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/forest_outpost/mode_360p_to_720p/5fps/buffers1/snapshots/lr",
+      "scene_variant": "forest_outpost",
+      "sha256": "0be4f5366f321e4852805dfe1ea74b3a6e5e85f298e8ae6c366b32c26866e997"
+    },
+    {
+      "byte_count": 15905544,
+      "channel": "native",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/forest_outpost/mode_360p_to_720p/5fps/buffers1/snapshots/native",
+      "scene_variant": "forest_outpost",
+      "sha256": "73709226fe234ecca78cf7900ec2f756ef0985549e3d5e9a5c90f24a36d596be"
+    },
+    {
+      "byte_count": 66572684,
+      "channel": "output",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/forest_outpost/mode_360p_to_720p/5fps/buffers1/snapshots/output",
+      "scene_variant": "forest_outpost",
+      "sha256": "3a247cb407d9164a01b772ab61c53a55b31bb0e7e41d17a59adcf1cafb846f37"
+    },
+    {
+      "byte_count": 6283233,
+      "channel": "validation_input",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/forest_outpost/mode_360p_to_720p/5fps/buffers1/snapshots/validation_input",
+      "scene_variant": "forest_outpost",
+      "sha256": "10e0e754f5920bcb26bc6ad1809e138c59eb1d65323fe5b7bc29b762f10f431a"
+    },
+    {
+      "byte_count": 83350259,
+      "channel": "residual_payload",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/forest_outpost/mode_360p_to_720p/5fps/buffers1/snapshots/residual_payload",
+      "scene_variant": "forest_outpost",
+      "sha256": "a008f91d9d84c823fb548dc0f784e9257fa1ff23f4726570e98eedfd2e1e97f7"
+    },
+    {
+      "byte_count": 6932434,
+      "channel": "lr",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/barrier_yard/mode_360p_to_720p/5fps/buffers1/snapshots/lr",
+      "scene_variant": "barrier_yard",
+      "sha256": "08389fa9aa12a6980c355505342a68e559591db710c2481d6ce858603e2404df"
+    },
+    {
+      "byte_count": 16257821,
+      "channel": "native",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/barrier_yard/mode_360p_to_720p/5fps/buffers1/snapshots/native",
+      "scene_variant": "barrier_yard",
+      "sha256": "9ced3e4d96cc1997c62f0e9881b94b166fe111821cbcc6bd1676b80b2bd965dc"
+    },
+    {
+      "byte_count": 68361352,
+      "channel": "output",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/barrier_yard/mode_360p_to_720p/5fps/buffers1/snapshots/output",
+      "scene_variant": "barrier_yard",
+      "sha256": "9f333891a251746de9c686fbc6936ef200d5907958de33da18cf9533b751c53b"
+    },
+    {
+      "byte_count": 6206253,
+      "channel": "validation_input",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/barrier_yard/mode_360p_to_720p/5fps/buffers1/snapshots/validation_input",
+      "scene_variant": "barrier_yard",
+      "sha256": "f2225b30ed15c05ea03b4d5296a453a668ef50e7d246a93cd60937c6387f3229"
+    },
+    {
+      "byte_count": 84662961,
+      "channel": "residual_payload",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/barrier_yard/mode_360p_to_720p/5fps/buffers1/snapshots/residual_payload",
+      "scene_variant": "barrier_yard",
+      "sha256": "d4013126f0b0bc371e754a4060baac233b5b099f282f83fe83f28ad9b582b721"
+    },
+    {
+      "byte_count": 3713840,
+      "channel": "lr",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/reflective_plaza/mode_360p_to_720p/5fps/buffers1/snapshots/lr",
+      "scene_variant": "reflective_plaza",
+      "sha256": "6eb0fbc76cb6389e7893ec72518a728787eef6aef789fec007cd5910a4cbd331"
+    },
+    {
+      "byte_count": 8197192,
+      "channel": "native",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/reflective_plaza/mode_360p_to_720p/5fps/buffers1/snapshots/native",
+      "scene_variant": "reflective_plaza",
+      "sha256": "e0ad03668512e7d278536a40161b9e0faa297d5e5a60f2893a12692630516bb9"
+    },
+    {
+      "byte_count": 43576805,
+      "channel": "output",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/reflective_plaza/mode_360p_to_720p/5fps/buffers1/snapshots/output",
+      "scene_variant": "reflective_plaza",
+      "sha256": "03842dddf47447504b723932881fbced8b1d1370398d20494843740b1f82750d"
+    },
+    {
+      "byte_count": 3312394,
+      "channel": "validation_input",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/reflective_plaza/mode_360p_to_720p/5fps/buffers1/snapshots/validation_input",
+      "scene_variant": "reflective_plaza",
+      "sha256": "3f7dc0dec69b051d11aa8be6cf664a40d8aa1635e4b5d876f7a7c7aaf5e23db0"
+    },
+    {
+      "byte_count": 55413511,
+      "channel": "residual_payload",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/reflective_plaza/mode_360p_to_720p/5fps/buffers1/snapshots/residual_payload",
+      "scene_variant": "reflective_plaza",
+      "sha256": "53cfe247d9781fbf4f01b6f013a0e6824607c53d3108a4c11582ac28261c4d08"
+    },
+    {
+      "byte_count": 5174271,
+      "channel": "lr",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/hud_particles/mode_360p_to_720p/5fps/buffers1/snapshots/lr",
+      "scene_variant": "hud_particles",
+      "sha256": "a71ffe6bb2b59c5aabfbaf4918eefef772efdc7a5530e2291110acb21bf92084"
+    },
+    {
+      "byte_count": 11470168,
+      "channel": "native",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/hud_particles/mode_360p_to_720p/5fps/buffers1/snapshots/native",
+      "scene_variant": "hud_particles",
+      "sha256": "3b2eeb2348e411d2d5812ff0199965865923f1763e240bb95cb84bf0d04ef0b5"
+    },
+    {
+      "byte_count": 54800115,
+      "channel": "output",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/hud_particles/mode_360p_to_720p/5fps/buffers1/snapshots/output",
+      "scene_variant": "hud_particles",
+      "sha256": "4faa63fd01c0ced15e1a2fdb4cc18951f450b22b4524d15996c923c500880695"
+    },
+    {
+      "byte_count": 4581609,
+      "channel": "validation_input",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/hud_particles/mode_360p_to_720p/5fps/buffers1/snapshots/validation_input",
+      "scene_variant": "hud_particles",
+      "sha256": "746a14d7a70faa159a6fa769c10f9b6ce7cc1f610319c4e8e8474eae62dec453"
+    },
+    {
+      "byte_count": 69297898,
+      "channel": "residual_payload",
+      "file_count": 300,
+      "root": "results/rk3576/paper1_refresh_quality_v1/always_neural/hud_particles/mode_360p_to_720p/5fps/buffers1/snapshots/residual_payload",
+      "scene_variant": "hud_particles",
+      "sha256": "b7e8ca7c27f459342ed11675c8a5eaf7ad0100cc98c43a154e45ec571e9a33ea"
+    }
+  ],
+  "manifest_id": "rk3576_paper1_v1_evidence_manifest",
+  "schema_version": 1,
+  "support_files": [
+    {
+      "bytes": 1266,
+      "path": "configs/rk3576_refresh_scheduler_paper1_v1.yaml",
+      "sha256": "56637b42c7318c6fe94164b182701f236b1f4bcdaa6a11ae054d3dab6f0959e5"
+    },
+    {
+      "bytes": 1730,
+      "path": "configs/rk3576_refresh_quality_paper1_v1.yaml",
+      "sha256": "b13d15a5cc6333323211df4aeca484d934355913622c447bbc0dd04492b5eff9"
+    },
+    {
+      "bytes": 1730,
+      "path": "results/models/rk3576_neural_refresh_paper1_v1.json",
+      "sha256": "0631920f938b8ea7ee693c7154a82dfb214a00933e2db1bd44d364461f53223e"
+    },
+    {
+      "bytes": 165346,
+      "path": "results/models/student_npu_w24_int8/rknn_int8/student_npu_w24_int8_subpixel_residual_subpixel_residual_int8_rk3576.rknn",
+      "sha256": "bc859c71480040e5f49ca9c65389c0d3a5ef17f63b9cd2d9e281368771dd72b6"
+    },
+    {
+      "bytes": 199925,
+      "path": "results/tables/rk3576_refresh_scheduler_paper1_v1.json",
+      "sha256": "c4fa4b5b3469338185075596209db0c8fffd62dbc1f01e38e12335c7f6eb5c8e"
+    },
+    {
+      "bytes": 18727,
+      "path": "results/tables/rk3576_refresh_quality_paper1_v1.json",
+      "sha256": "ea0ea5a9cc6cefbf76e524c8f7e5f8a690566fa9051de31304a944e69cb23397"
+    },
+    {
+      "bytes": 11064,
+      "path": "results/tables/rk3576_paper1_v1_final_decision.json",
+      "sha256": "2ee2fe55fa906dcc6c6690b2119e913e61a4d4a52526e40f56dd6c45b09fe9e7"
+    },
+    {
+      "bytes": 10544,
+      "path": "src/runtime/neural_refresh_policy.py",
+      "sha256": "3a9b223c9707af73326819113007deb72d2f66c3381e9f6c9f1e4b54c160a4a6"
+    },
+    {
+      "bytes": 16267,
+      "path": "src/eval/evaluate_refresh_policy_quality.py",
+      "sha256": "a03becab46e02749f92aa855e3c60f08751770c62f333192e1a0e80ffd7f46f8"
+    },
+    {
+      "bytes": 11649,
+      "path": "src/report/rk3576_refresh_paper1_v1_report.py",
+      "sha256": "70c17d2d656721539f883694c206b67ccac06b09008b1c8a30b1e42032d92100"
+    },
+    {
+      "bytes": 11427,
+      "path": "src/report/rk3576_paper1_v1_final_decision.py",
+      "sha256": "427051ea2e98ebc5a5f7b33582821ee5935250b2b33c0f8931556f0a89200857"
+    }
+  ]
+}

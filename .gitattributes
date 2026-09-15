@@ -1,0 +1,2 @@
+# Reviewer manifests bind exact bytes, including mixed historical line endings.
+* -text

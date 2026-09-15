@@ -1,0 +1,416 @@
+{
+  "direct_readback_validation": {
+    "all_frames_aligned": true,
+    "maximum_allowed_input_difference_lsb": 1,
+    "maximum_observed_input_difference_lsb": 1,
+    "vertical_flip_applied": true
+  },
+  "evidence_boundary": "fresh_board_rendered_temporal_quality_at_strict_display_deadline",
+  "experiment_id": "rk3576_refresh_quality_paper1_v1",
+  "frame_count": 1500,
+  "methods": {
+    "always_neural": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.03842652756720781,
+        "corridor_neon": 0.0350644089281559,
+        "forest_outpost": 0.03551828227937222,
+        "hud_particles": 0.03217819482088089,
+        "reflective_plaza": 0.031515146233141424
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.14463131848069,
+        "corridor_neon": 32.32282846334353,
+        "forest_outpost": 32.83763657255822,
+        "hud_particles": 31.609953735763725,
+        "reflective_plaza": 32.94073269491137
+      },
+      "scene_equal_lpips": 0.03454051196575165,
+      "scene_equal_psnr": 31.971156557011504,
+      "scene_equal_ssim": 0.9761236489216486,
+      "scene_equal_temporal_error": 0.0050558039345420325,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9703850843509039,
+        "corridor_neon": 0.9772060894966126,
+        "forest_outpost": 0.9751096087694168,
+        "hud_particles": 0.9772110245625178,
+        "reflective_plaza": 0.9807064374287923
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.00715301822509654,
+        "corridor_neon": 0.004418855025292838,
+        "forest_outpost": 0.004806144258792335,
+        "hud_particles": 0.004811705545643749,
+        "reflective_plaza": 0.0040892966178847
+      }
+    },
+    "fixed_period_2": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.06261371672153473,
+        "corridor_neon": 0.054544185474514964,
+        "forest_outpost": 0.05576567985117435,
+        "hud_particles": 0.051490533351898196,
+        "reflective_plaza": 0.04815505854785442
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.24575924633933,
+        "corridor_neon": 32.26306001921677,
+        "forest_outpost": 32.754681429657126,
+        "hud_particles": 31.586233034209823,
+        "reflective_plaza": 32.94756756098943
+      },
+      "scene_equal_lpips": 0.05451383478939533,
+      "scene_equal_psnr": 31.959460258082494,
+      "scene_equal_ssim": 0.977754865805308,
+      "scene_equal_temporal_error": 0.0051885255794648245,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9725761103630066,
+        "corridor_neon": 0.9789644189675649,
+        "forest_outpost": 0.9766692133744558,
+        "hud_particles": 0.9787370596329371,
+        "reflective_plaza": 0.9818275266885758
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.007331339835522565,
+        "corridor_neon": 0.004509701915272203,
+        "forest_outpost": 0.004879086535349239,
+        "hud_particles": 0.004956935802599209,
+        "reflective_plaza": 0.0042655638085809045
+      }
+    },
+    "fixed_period_3": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.06261371672153473,
+        "corridor_neon": 0.054544185474514964,
+        "forest_outpost": 0.05576567985117435,
+        "hud_particles": 0.051490533351898196,
+        "reflective_plaza": 0.04815505854785442
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.24575924633933,
+        "corridor_neon": 32.26306001921677,
+        "forest_outpost": 32.754681429657126,
+        "hud_particles": 31.586233034209823,
+        "reflective_plaza": 32.94756756098943
+      },
+      "scene_equal_lpips": 0.05451383478939533,
+      "scene_equal_psnr": 31.959460258082494,
+      "scene_equal_ssim": 0.977754865805308,
+      "scene_equal_temporal_error": 0.0051885255794648245,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9725761103630066,
+        "corridor_neon": 0.9789644189675649,
+        "forest_outpost": 0.9766692133744558,
+        "hud_particles": 0.9787370596329371,
+        "reflective_plaza": 0.9818275266885758
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.007331339835522565,
+        "corridor_neon": 0.004509701915272203,
+        "forest_outpost": 0.004879086535349239,
+        "hud_particles": 0.004956935802599209,
+        "reflective_plaza": 0.0042655638085809045
+      }
+    },
+    "gpu_bicubic": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.06261371672153473,
+        "corridor_neon": 0.054544185474514964,
+        "forest_outpost": 0.05576567985117435,
+        "hud_particles": 0.051490533351898196,
+        "reflective_plaza": 0.04815505854785442
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.24575924633933,
+        "corridor_neon": 32.26306001921677,
+        "forest_outpost": 32.754681429657126,
+        "hud_particles": 31.586233034209823,
+        "reflective_plaza": 32.94756756098943
+      },
+      "scene_equal_lpips": 0.05451383478939533,
+      "scene_equal_psnr": 31.959460258082494,
+      "scene_equal_ssim": 0.977754865805308,
+      "scene_equal_temporal_error": 0.0051885255794648245,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9725761103630066,
+        "corridor_neon": 0.9789644189675649,
+        "forest_outpost": 0.9766692133744558,
+        "hud_particles": 0.9787370596329371,
+        "reflective_plaza": 0.9818275266885758
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.007331339835522565,
+        "corridor_neon": 0.004509701915272203,
+        "forest_outpost": 0.004879086535349239,
+        "hud_particles": 0.004956935802599209,
+        "reflective_plaza": 0.0042655638085809045
+      }
+    },
+    "gpu_lanczos": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.07473205961287022,
+        "corridor_neon": 0.06464829109609127,
+        "forest_outpost": 0.06573812887072564,
+        "hud_particles": 0.0612481527030468,
+        "reflective_plaza": 0.0561219647526741
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.048773230424523,
+        "corridor_neon": 32.0474168419442,
+        "forest_outpost": 32.53206273800543,
+        "hud_particles": 31.395866689695612,
+        "reflective_plaza": 32.756729057661005
+      },
+      "scene_equal_lpips": 0.0644977194070816,
+      "scene_equal_psnr": 31.756169711546153,
+      "scene_equal_ssim": 0.9748169156710308,
+      "scene_equal_temporal_error": 0.005980770220905293,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9690017493565878,
+        "corridor_neon": 0.9761558192968368,
+        "forest_outpost": 0.97397900501887,
+        "hud_particles": 0.9758420453468959,
+        "reflective_plaza": 0.9791059593359629
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.008374505835183487,
+        "corridor_neon": 0.005217924940689501,
+        "forest_outpost": 0.00563683979568324,
+        "hud_particles": 0.005703587460340963,
+        "reflective_plaza": 0.004970993072629274
+      }
+    },
+    "renderer_deadline_refresh_v1": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.06261371672153473,
+        "corridor_neon": 0.054544185474514964,
+        "forest_outpost": 0.05576567985117435,
+        "hud_particles": 0.051490533351898196,
+        "reflective_plaza": 0.04815505854785442
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.24575924633933,
+        "corridor_neon": 32.26306001921677,
+        "forest_outpost": 32.754681429657126,
+        "hud_particles": 31.586233034209823,
+        "reflective_plaza": 32.94756756098943
+      },
+      "scene_equal_lpips": 0.05451383478939533,
+      "scene_equal_psnr": 31.959460258082494,
+      "scene_equal_ssim": 0.977754865805308,
+      "scene_equal_temporal_error": 0.0051885255794648245,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9725761103630066,
+        "corridor_neon": 0.9789644189675649,
+        "forest_outpost": 0.9766692133744558,
+        "hud_particles": 0.9787370596329371,
+        "reflective_plaza": 0.9818275266885758
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.007331339835522565,
+        "corridor_neon": 0.004509701915272203,
+        "forest_outpost": 0.004879086535349239,
+        "hud_particles": 0.004956935802599209,
+        "reflective_plaza": 0.0042655638085809045
+      }
+    },
+    "renderer_metadata_adverse": {
+      "lpips_by_scene": {
+        "barrier_yard": 0.06261371672153473,
+        "corridor_neon": 0.054544185474514964,
+        "forest_outpost": 0.05576567985117435,
+        "hud_particles": 0.051490533351898196,
+        "reflective_plaza": 0.04815505854785442
+      },
+      "psnr_by_scene": {
+        "barrier_yard": 30.24575924633933,
+        "corridor_neon": 32.26306001921677,
+        "forest_outpost": 32.754681429657126,
+        "hud_particles": 31.586233034209823,
+        "reflective_plaza": 32.94756756098943
+      },
+      "scene_equal_lpips": 0.05451383478939533,
+      "scene_equal_psnr": 31.959460258082494,
+      "scene_equal_ssim": 0.977754865805308,
+      "scene_equal_temporal_error": 0.0051885255794648245,
+      "ssim_by_scene": {
+        "barrier_yard": 0.9725761103630066,
+        "corridor_neon": 0.9789644189675649,
+        "forest_outpost": 0.9766692133744558,
+        "hud_particles": 0.9787370596329371,
+        "reflective_plaza": 0.9818275266885758
+      },
+      "temporal_error_by_scene": {
+        "barrier_yard": 0.007331339835522565,
+        "corridor_neon": 0.004509701915272203,
+        "forest_outpost": 0.004879086535349239,
+        "hud_particles": 0.004956935802599209,
+        "reflective_plaza": 0.0042655638085809045
+      }
+    }
+  },
+  "quality_gate": {
+    "beats_bicubic_every_scene": false,
+    "decision": "reject_refresh_quality_gate",
+    "maximum_psnr_drop_vs_always_neural_db": 0.1,
+    "overall_passed": false,
+    "psnr_drop_vs_always_neural_by_scene_db": {
+      "barrier_yard": -0.10112792785863789,
+      "corridor_neon": 0.059768444126753195,
+      "forest_outpost": 0.08295514290109196,
+      "hud_particles": 0.023720701553902046,
+      "reflective_plaza": -0.00683486607805861
+    },
+    "psnr_margin_over_bicubic_by_scene_db": {
+      "barrier_yard": 0.0,
+      "corridor_neon": 0.0,
+      "forest_outpost": 0.0,
+      "hud_particles": 0.0,
+      "reflective_plaza": 0.0
+    },
+    "within_tolerance_every_scene": true
+  },
+  "scene_count": 5,
+  "schema_version": 1,
+  "trace_hashes": [
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_bicubic/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "e8d444ee833da0d0bb83b3c77703dc8b39908b4ebca66ebb00b3a811fb046271"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_lanczos/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "f055e986ab913c81ac60f9431977f768d2d54c110485cc5ea225dda0595b59be"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/always_neural/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "007199068493a89a22d1871a42add6da3d3221a7967aaf950fbd399d8c73ada5"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_2/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "e8faed14eb0be88f89dfb70b03ff021ae04c95937fb50f54966360c6588875ca"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_3/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "bd907393b0c3ab68e51898f6258552d3f155301329766ffc5f70c0b8c64f4e4e"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_metadata_adverse/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "de8d21a4ff859452273f30331a6ce83cc04468106640f3c410fae608bbad77ee"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_deadline_refresh_v1/corridor_neon/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "ecb81f820135dea02c811dda5014a0a55ba6b99b088104f63996b46032e737d6"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_bicubic/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "77d55e99ee3a14db5868264f17d74e96359450ac27fd1afe477d3b1e019206e2"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_lanczos/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "f8f078728d20b960b383244e735310ab3b8806fb79e3a6e0c5ff806ebcd367db"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/always_neural/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "10485c35d4d7dad3eb684712b41bbcecccee191a1c81891b9e564459f0eaced1"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_2/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "15c2cfd465c4d8ed63ae2fbc8351b0b2e9baef3b081d0c0df9f85190067d4732"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_3/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "825b38f4ff20095cc8f0e8270cbe133bba9bb49f4bf3a3d7bd6eeac227014f72"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_metadata_adverse/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "91b6d2008f988ee06abebe5938fdd99f7d4757d1dfb5ca6f73cb1dc6f1df7263"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_deadline_refresh_v1/forest_outpost/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "df13f7b35ca78730382ee89732a448b93b845b1e8d1437ea2273eef84b2ed212"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_bicubic/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "651594c7c96e4e385ddd4c7a09635fd3ddfe656497a6efc521fc24ce4627fdc9"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_lanczos/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "6f443e705414d9ce86a83527831701a84d1c2c1e490c90f4c8573f665f5feb90"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/always_neural/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "9c06c66b5d7d7dbfe9c042535c70f5f2155d1a5bf5b10143a16def944edb7792"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_2/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "603e797c4a3dbc2042a0b9c2ffced1a718e79f81697d65bfeb29581717c017df"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_3/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "617fe40b891478f19775de7c6007f58da09b7bcfe37e770c45faf6fa53bff2f1"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_metadata_adverse/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "c907c1ad08c3276d2f77393a17ad554402f3b79096d675b8b4c2b82727ea9b16"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_deadline_refresh_v1/barrier_yard/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "d0da26ff3ef20d4a48af3a24f03f825776b8c816c8aec83c4f5b4fb161b2af9a"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_bicubic/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "1bc2dfd932c758d0bc72cca7b7e37409b22bb0003391329f439e34f79adb0df0"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_lanczos/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "0ecc1989f25088f12f8d4fd5d26800cbf9cb00b5d7cecd7f2d774a8630dc25dd"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/always_neural/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "2079dca59d2274765de1bd19cc41bfdbf4bed401102ea3b6075a9e92f52829f7"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_2/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "51f0d9417fe7fcad2327f1dac35a2cf299e1e7825537ec7ef2fba9f030e61090"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_3/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "a9e2d6ff880c1e62e67af3b6091226fa8d669cc21c4a7bedebade3e125387026"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_metadata_adverse/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "b7cc84f9f8184c8790f82a861594a612d3a1ff0a9d6acab16da19ebc414e3615"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_deadline_refresh_v1/reflective_plaza/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "fa0d9533ae2d4f15d9b01deeb5ca31164b438411f7fad4060b4a7a82c406ef4c"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_bicubic/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "d5f14215a14110e6a70bdb7f194f2511d533cfeeb4b3765736aeaebd051a9661"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/gpu_lanczos/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "3b60000ebb2e6ef4d5e9816b1f07fb2ec6004d0a3fb752044dc5a7b98d4273aa"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/always_neural/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "efaba17a5107aa700add8fb5e437b9123963d89d3ab87deb39086d2fb5ae92b0"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_2/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "06feb63ce6633abeee0dced840c9acd259204bfd94ade3101a86accbe8723e2c"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/fixed_period_3/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "8e3f80abae7afa39e661e0d045e1620f2fb939325446cbd5d5ac8e649b9d4879"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_metadata_adverse/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "88dca7427406874e1a789cc10270efb834005c30eabb70da891285116c13a562"
+    },
+    {
+      "path": "results/rk3576/paper1_refresh_v1/renderer_deadline_refresh_v1/hud_particles/mode_360p_to_720p/30fps/buffers3/godot_frames.jsonl",
+      "sha256": "ba690c1f37dd32666c56bbd7829723a733fe76770bd97f18e5a9c2db4786b83f"
+    }
+  ]
+}
