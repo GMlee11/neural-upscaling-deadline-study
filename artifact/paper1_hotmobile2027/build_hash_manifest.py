@@ -15,6 +15,23 @@ DEFAULT_OUTPUT = ROOT / "artifact/paper1_hotmobile2027/expected_outputs.json"
 # Bind the evidence, frozen replay support and generated exhibit fragments.
 # The submission manuscript and PDF are intentionally outside this artifact.
 EXPECTED_PATHS = (
+    'artifact/paper1_hotmobile2027/verify_180p_runtime.py',
+    'tests/test_paper1_three_resolution_artifact.py',
+    'results/rk3576/paper1_180p_output_v1/capture-evidence-v1.tar.gz',
+    'results/analysis/paper1_180p_output_v1_rk3576.json',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3576/report.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3576/validate.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3576/design.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3576/neural_refresh_policy.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3576/policy.json',
+    'results/rk3566/paper1_180p_output_v1/capture-evidence-v1.tar.gz',
+    'results/analysis/paper1_180p_output_v1_rk3566.json',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3566/report.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3566/validate.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3566/design.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3566/neural_refresh_policy.py',
+    'artifact/paper1_hotmobile2027/runtime_180p/rk3566/policy.json',
+
     "results/analysis/paper1_hotmobile2027_reprojection.jsonl",
     "docs/paper/PAPER1_EVIDENCE_GUIDE.md",
     "results/rk3576/paper1_corrected_runtime_v1/engineering-evidence-v2.tar.gz",

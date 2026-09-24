@@ -1,5 +1,4 @@
-# Evidence replay tools
+# Replay instructions
 
-See the [repository README](../../README.md) for setup, exhibit mapping,
-distribution scope and integrity instructions. This artifact excludes the
-submission manuscript and PDF. Frozen data and replay checks are retained.
+See the package-root README for Tables 1-3, all three output resolutions,
+72,000 sources, provenance boundaries and the non-mutating replay command.

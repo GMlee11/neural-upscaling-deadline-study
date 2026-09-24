@@ -1,0 +1,67 @@
+{
+  "artifact": "rk3576_neural_refresh_policy_paper1_v1",
+  "policy_id": "renderer_deadline_refresh_v1",
+  "renderer_priority_threshold": 0.25,
+  "priority_refresh_period_frames": 1,
+  "renderer_priority_weights": {
+    "thin_geometry_fraction": 1.0,
+    "repeated_patterns_fraction": 1.0,
+    "foliage_fraction": 1.0,
+    "hud_text_fraction": 1.0,
+    "particles_fraction": 1.0,
+    "fences_fraction": 1.0,
+    "reflective_surfaces_fraction": 1.0
+  },
+  "schema_version": 1,
+  "evidence_boundary": "preregistered_system_policy_not_quality_selector",
+  "service_ewma_alpha": 0.25,
+  "fixed_completion_overhead_ms": 4.0,
+  "safety_margin_ms": 2.0,
+  "maximum_pending_frames": 0,
+  "temperature_limit_c": 80.0,
+  "unsupported_workload_action": "bypass",
+  "supported_workloads": [
+    {
+      "mode_id": "mode_180p_to_360p",
+      "target_fps": 30,
+      "target_refresh_period_frames": 2,
+      "maximum_refresh_age_frames": 3,
+      "initial_service_ms": 30.0
+    },
+    {
+      "mode_id": "mode_180p_to_360p",
+      "target_fps": 60,
+      "target_refresh_period_frames": 3,
+      "maximum_refresh_age_frames": 4,
+      "initial_service_ms": 30.0
+    },
+    {
+      "mode_id": "mode_360p_to_720p",
+      "target_fps": 30,
+      "target_refresh_period_frames": 2,
+      "maximum_refresh_age_frames": 3,
+      "initial_service_ms": 58.0
+    },
+    {
+      "mode_id": "mode_90p_to_180p",
+      "target_fps": 30,
+      "target_refresh_period_frames": 2,
+      "maximum_refresh_age_frames": 3,
+      "initial_service_ms": 30.0
+    }
+  ],
+  "frozen_controls": [
+    "gpu_bicubic",
+    "gpu_lanczos",
+    "always_neural",
+    "fixed_period_2",
+    "fixed_period_3",
+    "renderer_metadata_adverse",
+    "offline_oracle"
+  ],
+  "claim_limits": {
+    "same_frame_real_time_requires_one_frame_deadline": true,
+    "refresh_age_is_not_same_frame_latency": true,
+    "energy_claim_permitted_without_external_meter": false
+  }
+}

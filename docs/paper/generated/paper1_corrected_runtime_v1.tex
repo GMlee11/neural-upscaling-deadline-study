@@ -1,6 +1,7 @@
-% Generated from the separate verified corrected-runtime V1 summaries.
+\newcommand{\CorrectedRuntimeTable}{%
+% Generated from verified source-linked runtime summaries; sessions remain separate.
 \begin{table*}[t]
-\caption{Corrected-system primary matrix: each row contains 3,000 source frames (five scenes, two repetitions). Receipt-side eligible means receipt age plus assignment duration $\leq33.33$ ms, excluding intervening waiting. Timely means first source-linked neural post-draw age $\leq33.33$ ms. Source rate is the equal-cell arithmetic mean of per-cell capture rates, not panel FPS. Classical zeros mean no neural work, not failed classical delivery.}
+\caption{Three-resolution runtime matrix: each row contains 3,000 source frames (five scenes, two repetitions). The 180p and 360p/720p measurements use separate sessions and configurations (Section~\ref{sec:experimental-design}). Receipt-side eligible means receipt age plus assignment duration $\leq33.33$ ms, excluding intervening waiting. Timely means first source-linked neural post-draw age $\leq33.33$ ms. Source rate is the equal-cell arithmetic mean of per-cell capture rates, not panel FPS. Classical zeros mean no neural work, not failed classical delivery.}
 \label{tab:corrected-runtime}
 \centering
 \fontsize{10}{11}\selectfont
@@ -9,7 +10,12 @@
 \toprule
 SoC & Output & Control & Sources/s & Submitted & \shortstack{Receipt-side\\eligible} & Selected & Timely \\
 \midrule
-RK3576 & 360p & Bicubic & 30.14 & 0 & 0 & 0 & 0 \\
+RK3576 & 180p & Bicubic & 30.17 & 0 & 0 & 0 & 0 \\
+ &  & Always neural & 30.17 & 3,000 & 2,791 & 3,000 & 1,032 \\
+ &  & Fixed/2 & 30.16 & 1,500 & 1,194 & 1,500 & 536 \\
+ &  & Deadline & 30.17 & 2,391 & 1,949 & 2,391 & 980 \\
+\addlinespace[2pt]
+ & 360p & Bicubic & 30.14 & 0 & 0 & 0 & 0 \\
  &  & Always neural & 24.41 & 3,000 & 224 & 2,984 & 12 \\
  &  & Fixed/2 & 29.48 & 1,500 & 171 & 1,499 & 6 \\
  &  & Deadline & 27.19 & 1,537 & 166 & 1,537 & 4 \\
@@ -19,7 +25,12 @@ RK3576 & 360p & Bicubic & 30.14 & 0 & 0 & 0 & 0 \\
  &  & Fixed/2 & 18.90 & 1,500 & 0 & 172 & 0 \\
  &  & Deadline & 30.14 & 87 & 0 & 54 & 0 \\
 \addlinespace[2pt]
-RK3566 & 360p & Bicubic & 28.99 & 0 & 0 & 0 & 0 \\
+RK3566 & 180p & Bicubic & 29.54 & 0 & 0 & 0 & 0 \\
+ &  & Always neural & 25.99 & 3,000 & 0 & 3,000 & 0 \\
+ &  & Fixed/2 & 27.25 & 1,500 & 0 & 1,500 & 0 \\
+ &  & Deadline & 26.52 & 1,501 & 0 & 1,501 & 0 \\
+\addlinespace[2pt]
+ & 360p & Bicubic & 28.99 & 0 & 0 & 0 & 0 \\
  &  & Always neural & 21.68 & 3,000 & 0 & 2,975 & 0 \\
  &  & Fixed/2 & 24.26 & 1,500 & 0 & 1,500 & 0 \\
  &  & Deadline & 23.51 & 1,403 & 0 & 1,402 & 0 \\
@@ -32,7 +43,9 @@ RK3566 & 360p & Bicubic & 28.99 & 0 & 0 & 0 & 0 \\
 \bottomrule
 \end{tabular}
 \end{table*}
+}
 
+\newcommand{\ConfirmatoryQualityTable}{%
 \begin{table*}[t]
 \caption{Scene-equal quality on three untouched confirmatory scenes. Late warp is motion-, depth-, and disocclusion-checked at a two-frame delay. Valid denotes the fraction admitting a neural correction; zero for classical baselines does not mean invalid output.}
 \label{tab:confirmatory-quality}
@@ -56,9 +69,12 @@ Mode & Method & PSNR & SSIM & LPIPS & Valid \\
 \bottomrule
 \end{tabular}
 \end{table*}
+}
 
-\newcommand{\CorrectedTimingFigure}{%
-\begin{figure}[t]
+\newcommand{\CorrectedTimingTable}{%
+\begin{table}[htbp]
+\caption{RK3576 360p always-neural examples, one per repetition (selection rule in Section~\ref{sec:delivery-results}). All values are in ms. Event times are elapsed from capture; $^*$marks the stamp just after assignment. Receipt-side scores exclude intervening waiting. Both examples pass the 33.33-ms score threshold but are already late at assignment.}
+\label{tab:corrected-timing}
 \centering
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{@{}lrrrr@{}}
@@ -69,7 +85,6 @@ R1 & 0 & 33.08 & 40.20 & 51.82 \\
 R2 & 0 & 31.81 & 34.12 & 43.42 \\
 \bottomrule
 \end{tabular}
-\par\smallskip Capture $\rightarrow$ receipt $\rightarrow$ assignment $\rightarrow$ first post-draw
 \par\smallskip Receipt-side scores (ms; not event timestamps)
 \par Receipt age + assignment duration
 \par\smallskip
@@ -77,7 +92,5 @@ R2 & 0 & 31.81 & 34.12 & 43.42 \\
 R1 & 33.082 + 0.045 & = & 33.127 \\
 R2 & 31.807 + 0.039 & = & 31.846 \\
 \end{tabular}
-\caption{RK3576 360p always-neural examples, one per repetition (selection rule in Section~\ref{sec:delivery-results}). Elapsed event times are measured from capture; $^*$marks the stamp just after assignment. Receipt-side scores exclude intervening waiting. Both examples pass the 33.33-ms score threshold but are already late at assignment. Arrows show event order, not duration.}
-\label{fig:corrected-timing}
-\end{figure}
+\end{table}
 }

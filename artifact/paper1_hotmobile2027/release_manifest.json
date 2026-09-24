@@ -14,23 +14,23 @@
     },
     {
       "path": "FILES.txt",
-      "sha256": "a1c9da50f78d09516c22f44d9a073ba6503493afff866a00d3784049583a7bde",
-      "size_bytes": 5343
+      "sha256": "542993625935cbdc49f2a6599233eac629b223f5a9bc0e07d2b965e164199c92",
+      "size_bytes": 6311
     },
     {
       "path": "README.md",
-      "sha256": "303a6da3f3b21672776ca33a863df61dc9b1e4d88ade946374fdcee566751067",
-      "size_bytes": 4879
+      "sha256": "1bffae6382e21d8bcd1652adfe0dbc52c746d667712ea80e7cffd72ae4ec251a",
+      "size_bytes": 6006
     },
     {
       "path": "artifact/paper1_hotmobile2027/README.md",
-      "sha256": "83e21d355c5a8d59f03b7bc1911228b5f6a528c8212c50eafb29bb6610c62c0b",
-      "size_bytes": 247
+      "sha256": "46277b644a0a247f9176b9a6b5cd37b29cf182ff1606ec8d5cce807e7765f2f2",
+      "size_bytes": 176
     },
     {
       "path": "artifact/paper1_hotmobile2027/build_hash_manifest.py",
-      "sha256": "e5d5251491093bd21790c364a7f1d308ba01f48078e16640be5aee2878db147c",
-      "size_bytes": 6171
+      "sha256": "9fcb85641b41f5f4f01425006d88198628046d8b07b6427df70575727772e1d0",
+      "size_bytes": 7252
     },
     {
       "path": "artifact/paper1_hotmobile2027/build_release_manifest.py",
@@ -64,8 +64,8 @@
     },
     {
       "path": "artifact/paper1_hotmobile2027/expected_outputs.json",
-      "sha256": "f91542efdd7148317b10c0404b729ad76b8ff9d6b3ebffcf7a594a8d465d6b01",
-      "size_bytes": 12018
+      "sha256": "7ceae873fbb590a99bc749b513292051bed479101f9efcf937dc3e5bfe257a7e",
+      "size_bytes": 15222
     },
     {
       "path": "artifact/paper1_hotmobile2027/explain_composition_timing.py",
@@ -79,13 +79,68 @@
     },
     {
       "path": "artifact/paper1_hotmobile2027/reproduce.ps1",
-      "sha256": "ba52fbcd0744362fb9e5b9e310c422b605e3816ad9f48b49463eecd28d8b7ca6",
-      "size_bytes": 5407
+      "sha256": "9cfdc9c345ee0a6dc5d791cd93c9f828a3eca199b23d98968c5bb38ab8efe7ee",
+      "size_bytes": 5606
     },
     {
       "path": "artifact/paper1_hotmobile2027/requirements.txt",
       "sha256": "e09254ed317a4df818cfbbc78ac55447f7e9716b981293d97b246a787dd216f5",
       "size_bytes": 28
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/design.py",
+      "sha256": "5f3fa72aedbc663128cc3131f65706abbbd079d40ac2355d6b3a5f2569e122de",
+      "size_bytes": 1732
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/neural_refresh_policy.py",
+      "sha256": "3a9b223c9707af73326819113007deb72d2f66c3381e9f6c9f1e4b54c160a4a6",
+      "size_bytes": 10544
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/policy.json",
+      "sha256": "6d60ebac7626ef2db4f7aec46ee68a25ed922f31365d77dba709e83a2763b3d2",
+      "size_bytes": 1917
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/report.py",
+      "sha256": "b48571edd28ce1599b71fe7756ab5c6c72a0898510eee47e1432391c0f4355f9",
+      "size_bytes": 5937
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/validate.py",
+      "sha256": "6d6dbe486ffab383eacdb4dafc012d4993b62ef455689ab28ceba61f9d658334",
+      "size_bytes": 9367
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/design.py",
+      "sha256": "9c59a5606b22e1bc0b936edb039ba7fe95d6e5de334928258b39aed680208ce4",
+      "size_bytes": 1814
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/neural_refresh_policy.py",
+      "sha256": "3a9b223c9707af73326819113007deb72d2f66c3381e9f6c9f1e4b54c160a4a6",
+      "size_bytes": 10544
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/policy.json",
+      "sha256": "6d60ebac7626ef2db4f7aec46ee68a25ed922f31365d77dba709e83a2763b3d2",
+      "size_bytes": 1917
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/report.py",
+      "sha256": "b48571edd28ce1599b71fe7756ab5c6c72a0898510eee47e1432391c0f4355f9",
+      "size_bytes": 5937
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/validate.py",
+      "sha256": "6d6dbe486ffab383eacdb4dafc012d4993b62ef455689ab28ceba61f9d658334",
+      "size_bytes": 9367
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/verify_180p_runtime.py",
+      "sha256": "2cf2e64d41789c9a16f233d3cb4e1116a7ed51ef73176a6350e4ce2d1b42a788",
+      "size_bytes": 3528
     },
     {
       "path": "artifact/paper1_hotmobile2027/verify_composition_audits.py",
@@ -219,13 +274,13 @@
     },
     {
       "path": "docs/paper/PAPER1_EVIDENCE_GUIDE.md",
-      "sha256": "7ddfc1775bd29f9cfb0a5107439a3c4dae83724cc21b6c8b0c535e474d1fd92f",
-      "size_bytes": 7046
+      "sha256": "502846bd2ca182e43327b683cd53928b1cb2bc5c9252b505828398ffd31646d5",
+      "size_bytes": 9337
     },
     {
       "path": "docs/paper/generated/paper1_corrected_runtime_v1.tex",
-      "sha256": "88ec73565e9b87dbd0373325cf5fa70b46f8314608bfb308e8c985de8f183a86",
-      "size_bytes": 3818
+      "sha256": "ee8eae3f0f0b7180e3256806dddad294ae9938585222caf2b8944b861a377b66",
+      "size_bytes": 4363
     },
     {
       "path": "docs/paper/generated/paper1_hotmobile2027.tex",
@@ -273,6 +328,16 @@
       "size_bytes": 2870
     },
     {
+      "path": "results/analysis/paper1_180p_output_v1_rk3566.json",
+      "sha256": "14d1fa678e687011884b2d64b8fea18ed5107943bc3b54523c554e500cbd7fc4",
+      "size_bytes": 79357
+    },
+    {
+      "path": "results/analysis/paper1_180p_output_v1_rk3576.json",
+      "sha256": "f417b8c5ae7960a8504c94cc62bfb8e16272f2e0206c74769779f566cadf3e6e",
+      "size_bytes": 79338
+    },
+    {
       "path": "results/analysis/paper1_hotmobile2027_reprojection.jsonl",
       "sha256": "9de1bad04e37cd05f35b73a04c187319fac081cc8c34c4707241b693a9bc899b",
       "size_bytes": 992826
@@ -296,6 +361,11 @@
       "path": "results/models/student_npu_w24_int8/student_npu_w24_runtime_dynamic.manifest.json",
       "sha256": "0378ed6c2cf1f6467412ec624d78ae82e817f302e90a1456d77aec9cb9662991",
       "size_bytes": 2147
+    },
+    {
+      "path": "results/rk3566/paper1_180p_output_v1/capture-evidence-v1.tar.gz",
+      "sha256": "f103ba049c5bc4234005ccfee710f4d4b2c6023c32ce94fce2025a37d12138b1",
+      "size_bytes": 15582139
     },
     {
       "path": "results/rk3566/paper1_composition_audit_v1/capture-evidence-v1.tar.gz",
@@ -346,6 +416,11 @@
       "path": "results/rk3566/paper1_replication_v1/terminal.json",
       "sha256": "e93f310a3ab4f8984dafab719393ea060495cd926c2d3088ec74a27e649c36b4",
       "size_bytes": 15232
+    },
+    {
+      "path": "results/rk3576/paper1_180p_output_v1/capture-evidence-v1.tar.gz",
+      "sha256": "f0c5659206550348725d1d78e02c76bc8c42491ffed5612ed8937319607d8dcc",
+      "size_bytes": 16359398
     },
     {
       "path": "results/rk3576/paper1_composition_audit_v1/capture-evidence-v1.tar.gz",
@@ -444,8 +519,8 @@
     },
     {
       "path": "src/report/paper1_corrected_runtime_v1.py",
-      "sha256": "a53803ef2b2f9ea975fff74a5087121e624689d67f33d14a05b9f15203542aa1",
-      "size_bytes": 7989
+      "sha256": "063290b51557f7b6eb5701106d4494871f788416bdc4ee177cde8234ef20346c",
+      "size_bytes": 9512
     },
     {
       "path": "src/report/paper1_hotmobile2027_report.py",
@@ -501,10 +576,15 @@
       "path": "tests/test_paper1_release_inventory.py",
       "sha256": "b769525891b6bc7ff46ec1b790ee69d779c0196606e903ff75b692af435001a7",
       "size_bytes": 1186
+    },
+    {
+      "path": "tests/test_paper1_three_resolution_artifact.py",
+      "sha256": "1f913a8ed1f98918b0bfa6281fd3ac760a78b4349231629271e0f7e53c1c0a8b",
+      "size_bytes": 1500
     }
   ],
-  "hashed_file_count": 100,
-  "hashed_size_bytes": 34825187,
+  "hashed_file_count": 116,
+  "hashed_size_bytes": 67000390,
   "schema_version": 1,
   "self_excluded": "artifact/paper1_hotmobile2027/release_manifest.json"
 }

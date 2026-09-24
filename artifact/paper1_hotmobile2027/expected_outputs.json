@@ -3,14 +3,94 @@
   "distribution_scope": "evidence_and_reproduction_only_no_manuscript_or_pdf",
   "files": [
     {
+      "path": "artifact/paper1_hotmobile2027/verify_180p_runtime.py",
+      "sha256": "2cf2e64d41789c9a16f233d3cb4e1116a7ed51ef73176a6350e4ce2d1b42a788",
+      "size_bytes": 3528
+    },
+    {
+      "path": "tests/test_paper1_three_resolution_artifact.py",
+      "sha256": "1f913a8ed1f98918b0bfa6281fd3ac760a78b4349231629271e0f7e53c1c0a8b",
+      "size_bytes": 1500
+    },
+    {
+      "path": "results/rk3576/paper1_180p_output_v1/capture-evidence-v1.tar.gz",
+      "sha256": "f0c5659206550348725d1d78e02c76bc8c42491ffed5612ed8937319607d8dcc",
+      "size_bytes": 16359398
+    },
+    {
+      "path": "results/analysis/paper1_180p_output_v1_rk3576.json",
+      "sha256": "f417b8c5ae7960a8504c94cc62bfb8e16272f2e0206c74769779f566cadf3e6e",
+      "size_bytes": 79338
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/report.py",
+      "sha256": "b48571edd28ce1599b71fe7756ab5c6c72a0898510eee47e1432391c0f4355f9",
+      "size_bytes": 5937
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/validate.py",
+      "sha256": "6d6dbe486ffab383eacdb4dafc012d4993b62ef455689ab28ceba61f9d658334",
+      "size_bytes": 9367
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/design.py",
+      "sha256": "9c59a5606b22e1bc0b936edb039ba7fe95d6e5de334928258b39aed680208ce4",
+      "size_bytes": 1814
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/neural_refresh_policy.py",
+      "sha256": "3a9b223c9707af73326819113007deb72d2f66c3381e9f6c9f1e4b54c160a4a6",
+      "size_bytes": 10544
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3576/policy.json",
+      "sha256": "6d60ebac7626ef2db4f7aec46ee68a25ed922f31365d77dba709e83a2763b3d2",
+      "size_bytes": 1917
+    },
+    {
+      "path": "results/rk3566/paper1_180p_output_v1/capture-evidence-v1.tar.gz",
+      "sha256": "f103ba049c5bc4234005ccfee710f4d4b2c6023c32ce94fce2025a37d12138b1",
+      "size_bytes": 15582139
+    },
+    {
+      "path": "results/analysis/paper1_180p_output_v1_rk3566.json",
+      "sha256": "14d1fa678e687011884b2d64b8fea18ed5107943bc3b54523c554e500cbd7fc4",
+      "size_bytes": 79357
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/report.py",
+      "sha256": "b48571edd28ce1599b71fe7756ab5c6c72a0898510eee47e1432391c0f4355f9",
+      "size_bytes": 5937
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/validate.py",
+      "sha256": "6d6dbe486ffab383eacdb4dafc012d4993b62ef455689ab28ceba61f9d658334",
+      "size_bytes": 9367
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/design.py",
+      "sha256": "5f3fa72aedbc663128cc3131f65706abbbd079d40ac2355d6b3a5f2569e122de",
+      "size_bytes": 1732
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/neural_refresh_policy.py",
+      "sha256": "3a9b223c9707af73326819113007deb72d2f66c3381e9f6c9f1e4b54c160a4a6",
+      "size_bytes": 10544
+    },
+    {
+      "path": "artifact/paper1_hotmobile2027/runtime_180p/rk3566/policy.json",
+      "sha256": "6d60ebac7626ef2db4f7aec46ee68a25ed922f31365d77dba709e83a2763b3d2",
+      "size_bytes": 1917
+    },
+    {
       "path": "results/analysis/paper1_hotmobile2027_reprojection.jsonl",
       "sha256": "9de1bad04e37cd05f35b73a04c187319fac081cc8c34c4707241b693a9bc899b",
       "size_bytes": 992826
     },
     {
       "path": "docs/paper/PAPER1_EVIDENCE_GUIDE.md",
-      "sha256": "7ddfc1775bd29f9cfb0a5107439a3c4dae83724cc21b6c8b0c535e474d1fd92f",
-      "size_bytes": 7046
+      "sha256": "502846bd2ca182e43327b683cd53928b1cb2bc5c9252b505828398ffd31646d5",
+      "size_bytes": 9337
     },
     {
       "path": "results/rk3576/paper1_corrected_runtime_v1/engineering-evidence-v2.tar.gz",
@@ -74,8 +154,8 @@
     },
     {
       "path": "src/report/paper1_corrected_runtime_v1.py",
-      "sha256": "a53803ef2b2f9ea975fff74a5087121e624689d67f33d14a05b9f15203542aa1",
-      "size_bytes": 7989
+      "sha256": "063290b51557f7b6eb5701106d4494871f788416bdc4ee177cde8234ef20346c",
+      "size_bytes": 9512
     },
     {
       "path": "tests/test_paper1_corrected_artifact.py",
@@ -84,8 +164,8 @@
     },
     {
       "path": "docs/paper/generated/paper1_corrected_runtime_v1.tex",
-      "sha256": "88ec73565e9b87dbd0373325cf5fa70b46f8314608bfb308e8c985de8f183a86",
-      "size_bytes": 3818
+      "sha256": "ee8eae3f0f0b7180e3256806dddad294ae9938585222caf2b8944b861a377b66",
+      "size_bytes": 4363
     },
     {
       "path": "results/rk3576/paper1_prompt_selection_v1/capture-evidence-v1.tar.gz",

@@ -1,0 +1,3039 @@
+{
+  "protocol": "paper1_180p_output_v1",
+  "board": "rk3576",
+  "status": "COMPLETE",
+  "engineering": false,
+  "freeze_sha256": "4182a4250ebe88d582f2d288ed007c35bf1a46d9d23ba10d0f0beed98efb37ce",
+  "verified_files": 321,
+  "cells": [
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 0,
+      "status": "COMPLETE",
+      "directory": "00_r1_corridor_neon_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.160563137053632,
+      "source_terminal_rate": 30.347051520057423,
+      "complete_run_throughput": 30.193118203340386,
+      "draw_rate": 133.6803852090461,
+      "initial_fallback_rate": 30.18940773834285,
+      "classical_draws": 1327,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.401,
+          "median": 80.0325,
+          "mean": 82.13978333333333,
+          "max": 109.453
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.002,
+          "mean": 0.00169,
+          "max": 0.009
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.858,
+          "median": 6.754,
+          "mean": 8.05503,
+          "max": 24.762
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 1,
+      "status": "COMPLETE",
+      "directory": "01_r1_corridor_neon_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 297,
+      "selected": 300,
+      "timely_pre": 229,
+      "timely_post": 146,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.215,
+        "median": 27.482,
+        "mean": 29.512026666666667,
+        "max": 62.966
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.277,
+        "median": 33.4245,
+        "mean": 35.50253,
+        "max": 76.811
+      },
+      "source_capture_rate": 30.163834006908225,
+      "source_terminal_rate": 30.40798051855268,
+      "complete_run_throughput": 30.157561194215297,
+      "draw_rate": 128.35369288461848,
+      "initial_fallback_rate": 30.188453693890494,
+      "classical_draws": 976,
+      "service_ms": {
+        "n": 300,
+        "min": 12.305,
+        "median": 14.264,
+        "mean": 14.623923333333334,
+        "max": 40.269
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.186,
+          "median": 82.156,
+          "mean": 82.29779666666667,
+          "max": 114.724
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.036,
+          "median": 0.0455,
+          "mean": 0.04754666666666667,
+          "max": 0.197
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.239,
+          "median": 21.261,
+          "mean": 21.78696,
+          "max": 53.37
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 2,
+      "status": "COMPLETE",
+      "directory": "02_r1_corridor_neon_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 146,
+      "selected": 150,
+      "timely_pre": 118,
+      "timely_post": 67,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.269,
+        "median": 27.9695,
+        "mean": 30.140813333333334,
+        "max": 64.869
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.357,
+        "median": 34.4975,
+        "mean": 36.19668,
+        "max": 78.621
+      },
+      "source_capture_rate": 30.160520544358057,
+      "source_terminal_rate": 30.41412338307992,
+      "complete_run_throughput": 30.204198504408907,
+      "draw_rate": 131.40894473679464,
+      "initial_fallback_rate": 30.188941376811602,
+      "classical_draws": 1154,
+      "service_ms": {
+        "n": 150,
+        "min": 12.792,
+        "median": 14.781,
+        "mean": 15.48816,
+        "max": 42.883
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 18.746,
+          "median": 81.553,
+          "mean": 81.84041333333333,
+          "max": 117.734
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.0,
+          "median": 0.0205,
+          "mean": 0.02513,
+          "max": 0.241
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.878,
+          "median": 19.0175,
+          "mean": 15.017903333333333,
+          "max": 57.761
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 3,
+      "status": "COMPLETE",
+      "directory": "03_r1_corridor_neon_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 269,
+      "submitted": 269,
+      "completed": 269,
+      "eligible": 245,
+      "selected": 269,
+      "timely_pre": 197,
+      "timely_post": 119,
+      "routes": {
+        "accepted_neural": 269,
+        "refresh_policy_bypass": 31
+      },
+      "selection_age_pre_ms": {
+        "n": 269,
+        "min": 20.407,
+        "median": 28.828,
+        "mean": 31.940687732342006,
+        "max": 66.693
+      },
+      "selection_age_post_ms": {
+        "n": 269,
+        "min": 23.994,
+        "median": 34.145,
+        "mean": 38.0469219330855,
+        "max": 78.297
+      },
+      "source_capture_rate": 30.15895382522957,
+      "source_terminal_rate": 30.315073993113714,
+      "complete_run_throughput": 30.15035681439772,
+      "draw_rate": 119.28868939045793,
+      "initial_fallback_rate": 30.186820070903693,
+      "classical_draws": 917,
+      "service_ms": {
+        "n": 269,
+        "min": 12.094,
+        "median": 14.088,
+        "mean": 15.197133828996282,
+        "max": 34.3
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.964,
+          "median": 82.747,
+          "mean": 85.17445,
+          "max": 144.383
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.045,
+          "mean": 0.048536666666666665,
+          "max": 0.787
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 8.877,
+          "median": 20.761,
+          "mean": 22.40475,
+          "max": 49.188
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 4,
+      "status": "COMPLETE",
+      "directory": "04_r1_forest_outpost_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 275,
+      "selected": 300,
+      "timely_pre": 170,
+      "timely_post": 101,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.285,
+        "median": 31.5845,
+        "mean": 33.68736666666667,
+        "max": 71.621
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.381,
+        "median": 38.712,
+        "mean": 41.231226666666664,
+        "max": 89.227
+      },
+      "source_capture_rate": 30.157600189296936,
+      "source_terminal_rate": 30.477471898802563,
+      "complete_run_throughput": 30.151614377737012,
+      "draw_rate": 111.29597827051685,
+      "initial_fallback_rate": 30.198082250082336,
+      "classical_draws": 806,
+      "service_ms": {
+        "n": 300,
+        "min": 12.527,
+        "median": 15.355,
+        "mean": 16.345596666666665,
+        "max": 44.613
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.11,
+          "median": 83.18299999999999,
+          "mean": 85.67764,
+          "max": 139.137
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.017,
+          "median": 0.044,
+          "mean": 0.04778,
+          "max": 0.234
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.767,
+          "median": 23.6935,
+          "mean": 24.98152333333333,
+          "max": 63.206
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 5,
+      "status": "COMPLETE",
+      "directory": "05_r1_forest_outpost_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 97,
+      "selected": 150,
+      "timely_pre": 83,
+      "timely_post": 31,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.684,
+        "median": 31.686999999999998,
+        "mean": 41.265393333333336,
+        "max": 79.228
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.384,
+        "median": 38.427,
+        "mean": 50.38429333333333,
+        "max": 94.401
+      },
+      "source_capture_rate": 30.168243957976745,
+      "source_terminal_rate": 30.478379055828746,
+      "complete_run_throughput": 30.2161329775753,
+      "draw_rate": 101.04472378638177,
+      "initial_fallback_rate": 30.205669290956767,
+      "classical_draws": 852,
+      "service_ms": {
+        "n": 150,
+        "min": 12.726,
+        "median": 15.144,
+        "mean": 19.132066666666667,
+        "max": 40.247
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 17.363,
+          "median": 82.28800000000001,
+          "mean": 89.25079333333333,
+          "max": 139.831
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.02,
+          "mean": 0.027393333333333332,
+          "max": 0.102
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.869,
+          "median": 19.456,
+          "mean": 20.589313333333333,
+          "max": 57.562
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 6,
+      "status": "COMPLETE",
+      "directory": "06_r1_forest_outpost_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 230,
+      "submitted": 230,
+      "completed": 230,
+      "eligible": 186,
+      "selected": 230,
+      "timely_pre": 142,
+      "timely_post": 71,
+      "routes": {
+        "accepted_neural": 230,
+        "refresh_policy_bypass": 70
+      },
+      "selection_age_pre_ms": {
+        "n": 230,
+        "min": 19.374,
+        "median": 30.1815,
+        "mean": 36.56405652173913,
+        "max": 78.211
+      },
+      "selection_age_post_ms": {
+        "n": 230,
+        "min": 22.455,
+        "median": 35.9095,
+        "mean": 43.80157391304348,
+        "max": 95.804
+      },
+      "source_capture_rate": 30.162756823516702,
+      "source_terminal_rate": 30.367677416045815,
+      "complete_run_throughput": 30.15096285592332,
+      "draw_rate": 101.02011195724958,
+      "initial_fallback_rate": 30.19972014252652,
+      "classical_draws": 774,
+      "service_ms": {
+        "n": 230,
+        "min": 7.394,
+        "median": 14.376999999999999,
+        "mean": 16.679543478260868,
+        "max": 44.885
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 37.018,
+          "median": 82.833,
+          "mean": 89.27696333333333,
+          "max": 132.683
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.045,
+          "mean": 0.04188,
+          "max": 0.251
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 9.242,
+          "median": 20.7435,
+          "mean": 23.961846666666666,
+          "max": 63.075
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 7,
+      "status": "COMPLETE",
+      "directory": "07_r1_forest_outpost_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.174272063346997,
+      "source_terminal_rate": 30.367535540426857,
+      "complete_run_throughput": 30.206713603200782,
+      "draw_rate": 108.46559886518371,
+      "initial_fallback_rate": 30.2091483404569,
+      "classical_draws": 1076,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.4,
+          "median": 84.1985,
+          "mean": 87.85049666666667,
+          "max": 118.705
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.002,
+          "mean": 0.0017800000000000001,
+          "max": 0.006
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 5.087,
+          "median": 7.636,
+          "mean": 11.006956666666667,
+          "max": 25.074
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 8,
+      "status": "COMPLETE",
+      "directory": "08_r1_barrier_yard_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 97,
+      "selected": 150,
+      "timely_pre": 81,
+      "timely_post": 44,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.14,
+        "median": 31.908499999999997,
+        "mean": 41.50962666666667,
+        "max": 77.279
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.203,
+        "median": 39.340500000000006,
+        "mean": 50.972253333333335,
+        "max": 93.036
+      },
+      "source_capture_rate": 30.164040932300896,
+      "source_terminal_rate": 30.472508345033994,
+      "complete_run_throughput": 30.212730859253085,
+      "draw_rate": 98.73636613663358,
+      "initial_fallback_rate": 30.20653897820472,
+      "classical_draws": 829,
+      "service_ms": {
+        "n": 150,
+        "min": 13.068,
+        "median": 15.2915,
+        "mean": 19.571253333333335,
+        "max": 45.916
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 17.097,
+          "median": 81.84899999999999,
+          "mean": 89.95055,
+          "max": 139.984
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.020499999999999997,
+          "mean": 0.027406666666666666,
+          "max": 0.106
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.73,
+          "median": 19.5215,
+          "mean": 21.215843333333332,
+          "max": 64.709
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 9,
+      "status": "COMPLETE",
+      "directory": "09_r1_barrier_yard_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 204,
+      "submitted": 204,
+      "completed": 204,
+      "eligible": 138,
+      "selected": 204,
+      "timely_pre": 125,
+      "timely_post": 76,
+      "routes": {
+        "accepted_neural": 204,
+        "refresh_policy_bypass": 96
+      },
+      "selection_age_pre_ms": {
+        "n": 204,
+        "min": 19.837,
+        "median": 31.0515,
+        "mean": 40.13291176470588,
+        "max": 82.44
+      },
+      "selection_age_post_ms": {
+        "n": 204,
+        "min": 23.188,
+        "median": 36.763,
+        "mean": 48.404200980392154,
+        "max": 97.649
+      },
+      "source_capture_rate": 30.164740848052936,
+      "source_terminal_rate": 30.439218581483548,
+      "complete_run_throughput": 30.15471479519973,
+      "draw_rate": 90.8834170071356,
+      "initial_fallback_rate": 30.20678616161459,
+      "classical_draws": 699,
+      "service_ms": {
+        "n": 204,
+        "min": 10.857,
+        "median": 14.3005,
+        "mean": 18.22435294117647,
+        "max": 45.788
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 36.424,
+          "median": 83.68549999999999,
+          "mean": 91.95409333333333,
+          "max": 184.916
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.045,
+          "mean": 0.04164333333333333,
+          "max": 0.876
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 8.334,
+          "median": 20.386,
+          "mean": 24.88242,
+          "max": 65.78
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 10,
+      "status": "COMPLETE",
+      "directory": "10_r1_barrier_yard_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.17644947125108,
+      "source_terminal_rate": 30.38188402432136,
+      "complete_run_throughput": 30.20844734924399,
+      "draw_rate": 107.27511823200119,
+      "initial_fallback_rate": 30.21479892556579,
+      "classical_draws": 1064,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.482,
+          "median": 81.9615,
+          "mean": 88.24831,
+          "max": 125.828
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.0,
+          "median": 0.002,
+          "mean": 0.0019033333333333333,
+          "max": 0.013
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.842,
+          "median": 7.718,
+          "mean": 11.229486666666666,
+          "max": 26.671
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 11,
+      "status": "COMPLETE",
+      "directory": "11_r1_barrier_yard_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 277,
+      "selected": 300,
+      "timely_pre": 163,
+      "timely_post": 89,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.7,
+        "median": 32.0705,
+        "mean": 35.13158,
+        "max": 73.558
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.177,
+        "median": 38.873999999999995,
+        "mean": 42.99331,
+        "max": 92.779
+      },
+      "source_capture_rate": 30.166061647121445,
+      "source_terminal_rate": 30.505503743810902,
+      "complete_run_throughput": 30.15951063580169,
+      "draw_rate": 108.51327948873535,
+      "initial_fallback_rate": 30.2090720369169,
+      "classical_draws": 778,
+      "service_ms": {
+        "n": 300,
+        "min": 12.453,
+        "median": 15.366,
+        "mean": 16.447106666666667,
+        "max": 45.412
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.282,
+          "median": 82.664,
+          "mean": 86.36089666666666,
+          "max": 145.543
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.027,
+          "median": 0.045,
+          "mean": 0.04696,
+          "max": 0.084
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.521,
+          "median": 23.747,
+          "mean": 25.452733333333335,
+          "max": 64.76
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 12,
+      "status": "COMPLETE",
+      "directory": "12_r1_reflective_plaza_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 241,
+      "submitted": 241,
+      "completed": 241,
+      "eligible": 193,
+      "selected": 241,
+      "timely_pre": 160,
+      "timely_post": 103,
+      "routes": {
+        "accepted_neural": 241,
+        "refresh_policy_bypass": 59
+      },
+      "selection_age_pre_ms": {
+        "n": 241,
+        "min": 19.024,
+        "median": 29.583,
+        "mean": 34.422817427385894,
+        "max": 67.503
+      },
+      "selection_age_post_ms": {
+        "n": 241,
+        "min": 23.059,
+        "median": 34.736,
+        "mean": 41.05534024896266,
+        "max": 80.958
+      },
+      "source_capture_rate": 30.175636332515733,
+      "source_terminal_rate": 30.363585145281125,
+      "complete_run_throughput": 30.187397325114848,
+      "draw_rate": 109.37348931644591,
+      "initial_fallback_rate": 30.20614837563154,
+      "classical_draws": 845,
+      "service_ms": {
+        "n": 241,
+        "min": 10.926,
+        "median": 13.957,
+        "mean": 16.064290456431536,
+        "max": 42.416
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 29.237,
+          "median": 83.393,
+          "mean": 87.77570666666666,
+          "max": 141.691
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.047,
+          "mean": 0.04351,
+          "max": 0.307
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 8.847,
+          "median": 19.926000000000002,
+          "mean": 23.14558,
+          "max": 57.902
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 13,
+      "status": "COMPLETE",
+      "directory": "13_r1_reflective_plaza_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.156651195665834,
+      "source_terminal_rate": 30.352658299010635,
+      "complete_run_throughput": 30.189888359805504,
+      "draw_rate": 124.90410588000181,
+      "initial_fallback_rate": 30.188535989278325,
+      "classical_draws": 1240,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.106,
+          "median": 81.85900000000001,
+          "mean": 83.99745,
+          "max": 112.419
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.002,
+          "mean": 0.0018333333333333333,
+          "max": 0.008
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.516,
+          "median": 6.835,
+          "mean": 8.989483333333334,
+          "max": 24.884
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 14,
+      "status": "COMPLETE",
+      "directory": "14_r1_reflective_plaza_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 286,
+      "selected": 300,
+      "timely_pre": 220,
+      "timely_post": 101,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 18.77,
+        "median": 30.484,
+        "mean": 31.34682,
+        "max": 63.169
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 22.621,
+        "median": 36.838,
+        "mean": 37.81403666666667,
+        "max": 79.739
+      },
+      "source_capture_rate": 30.172207622730753,
+      "source_terminal_rate": 30.44430458844544,
+      "complete_run_throughput": 30.16480238133016,
+      "draw_rate": 122.37948388465492,
+      "initial_fallback_rate": 30.20218799195349,
+      "classical_draws": 916,
+      "service_ms": {
+        "n": 300,
+        "min": 12.144,
+        "median": 14.6385,
+        "mean": 15.240566666666666,
+        "max": 35.109
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.557,
+          "median": 82.63050000000001,
+          "mean": 83.54115333333333,
+          "max": 125.759
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.027,
+          "median": 0.046,
+          "mean": 0.047156666666666666,
+          "max": 0.081
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.139,
+          "median": 22.197000000000003,
+          "mean": 22.81963,
+          "max": 50.135
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 15,
+      "status": "COMPLETE",
+      "directory": "15_r1_reflective_plaza_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 121,
+      "selected": 150,
+      "timely_pre": 101,
+      "timely_post": 58,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 19.87,
+        "median": 28.8975,
+        "mean": 33.74164666666667,
+        "max": 64.692
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.013,
+        "median": 34.5965,
+        "mean": 40.588433333333334,
+        "max": 76.972
+      },
+      "source_capture_rate": 30.16736429957787,
+      "source_terminal_rate": 30.41000621421866,
+      "complete_run_throughput": 30.21300470446696,
+      "draw_rate": 123.47431109398038,
+      "initial_fallback_rate": 30.19544735464149,
+      "classical_draws": 1075,
+      "service_ms": {
+        "n": 150,
+        "min": 12.757,
+        "median": 14.5235,
+        "mean": 16.658686666666668,
+        "max": 38.618
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 18.101,
+          "median": 82.036,
+          "mean": 84.05082666666667,
+          "max": 113.364
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.02,
+          "mean": 0.024706666666666665,
+          "max": 0.081
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.575,
+          "median": 18.104999999999997,
+          "mean": 16.67491,
+          "max": 53.141
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 16,
+      "status": "COMPLETE",
+      "directory": "16_r1_hud_particles_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.165784695797736,
+      "source_terminal_rate": 30.363508059581935,
+      "complete_run_throughput": 30.197938427007507,
+      "draw_rate": 123.63274726171602,
+      "initial_fallback_rate": 30.196651908347608,
+      "classical_draws": 1227,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.465,
+          "median": 81.0555,
+          "mean": 84.26706,
+          "max": 116.516
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.0,
+          "median": 0.001,
+          "mean": 0.00132,
+          "max": 0.005
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.69,
+          "median": 7.021,
+          "mean": 9.12388,
+          "max": 23.471
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 17,
+      "status": "COMPLETE",
+      "directory": "17_r1_hud_particles_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 294,
+      "selected": 300,
+      "timely_pre": 200,
+      "timely_post": 99,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.484,
+        "median": 30.764499999999998,
+        "mean": 30.98539,
+        "max": 66.13
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.187,
+        "median": 37.176,
+        "mean": 37.22768666666666,
+        "max": 81.599
+      },
+      "source_capture_rate": 30.16551687957401,
+      "source_terminal_rate": 30.45097383029051,
+      "complete_run_throughput": 30.158170557120933,
+      "draw_rate": 123.94993428741917,
+      "initial_fallback_rate": 30.196151778179676,
+      "classical_draws": 932,
+      "service_ms": {
+        "n": 300,
+        "min": 12.399,
+        "median": 14.6665,
+        "mean": 15.167216666666667,
+        "max": 42.256
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.543,
+          "median": 82.762,
+          "mean": 83.15073,
+          "max": 128.435
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.029,
+          "median": 0.047,
+          "mean": 0.047843333333333335,
+          "max": 0.133
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.332,
+          "median": 22.0185,
+          "mean": 22.611283333333333,
+          "max": 57.422
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 18,
+      "status": "COMPLETE",
+      "directory": "18_r1_hud_particles_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 146,
+      "selected": 150,
+      "timely_pre": 99,
+      "timely_post": 53,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.018,
+        "median": 30.773,
+        "mean": 31.609306666666665,
+        "max": 67.969
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 23.958,
+        "median": 36.936,
+        "mean": 37.88961333333334,
+        "max": 80.772
+      },
+      "source_capture_rate": 30.164539999340214,
+      "source_terminal_rate": 30.418681098889607,
+      "complete_run_throughput": 30.213525024049964,
+      "draw_rate": 128.5300138247891,
+      "initial_fallback_rate": 30.195544935161884,
+      "classical_draws": 1125,
+      "service_ms": {
+        "n": 150,
+        "min": 13.373,
+        "median": 14.668,
+        "mean": 15.390206666666666,
+        "max": 36.23
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 17.002,
+          "median": 81.999,
+          "mean": 82.18345666666667,
+          "max": 118.679
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.0235,
+          "mean": 0.024293333333333333,
+          "max": 0.087
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.406,
+          "median": 18.506,
+          "mean": 15.123133333333334,
+          "max": 50.862
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 1,
+      "index": 19,
+      "status": "COMPLETE",
+      "directory": "19_r1_hud_particles_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 276,
+      "submitted": 276,
+      "completed": 276,
+      "eligible": 263,
+      "selected": 276,
+      "timely_pre": 183,
+      "timely_post": 92,
+      "routes": {
+        "accepted_neural": 276,
+        "refresh_policy_bypass": 24
+      },
+      "selection_age_pre_ms": {
+        "n": 276,
+        "min": 19.769,
+        "median": 30.639499999999998,
+        "mean": 32.246721014492756,
+        "max": 66.67
+      },
+      "selection_age_post_ms": {
+        "n": 276,
+        "min": 23.17,
+        "median": 36.394999999999996,
+        "mean": 38.48994927536232,
+        "max": 79.977
+      },
+      "source_capture_rate": 30.170390052691225,
+      "source_terminal_rate": 30.359916300046137,
+      "complete_run_throughput": 30.159513667788936,
+      "draw_rate": 117.9293695648849,
+      "initial_fallback_rate": 30.20137346553791,
+      "classical_draws": 896,
+      "service_ms": {
+        "n": 276,
+        "min": 12.063,
+        "median": 14.686,
+        "mean": 15.165402173913044,
+        "max": 35.945
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 36.699,
+          "median": 82.971,
+          "mean": 85.26728666666666,
+          "max": 206.449
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.0455,
+          "mean": 0.043776666666666665,
+          "max": 0.143
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 9.791,
+          "median": 22.1145,
+          "mean": 22.688876666666665,
+          "max": 52.166
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 20,
+      "status": "COMPLETE",
+      "directory": "20_r2_hud_particles_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 249,
+      "submitted": 249,
+      "completed": 249,
+      "eligible": 209,
+      "selected": 249,
+      "timely_pre": 183,
+      "timely_post": 129,
+      "routes": {
+        "accepted_neural": 249,
+        "refresh_policy_bypass": 51
+      },
+      "selection_age_pre_ms": {
+        "n": 249,
+        "min": 19.125,
+        "median": 27.744,
+        "mean": 32.273128514056225,
+        "max": 64.85
+      },
+      "selection_age_post_ms": {
+        "n": 249,
+        "min": 22.845,
+        "median": 33.199,
+        "mean": 38.83722891566265,
+        "max": 79.392
+      },
+      "source_capture_rate": 30.168180036433878,
+      "source_terminal_rate": 30.346263040393108,
+      "complete_run_throughput": 30.179094820301597,
+      "draw_rate": 111.8625783830954,
+      "initial_fallback_rate": 30.197856558161426,
+      "classical_draws": 862,
+      "service_ms": {
+        "n": 249,
+        "min": 11.902,
+        "median": 13.905,
+        "mean": 15.674032128514057,
+        "max": 35.287
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 29.521,
+          "median": 83.05,
+          "mean": 86.97178333333333,
+          "max": 118.958
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.044,
+          "mean": 0.04192,
+          "max": 0.186
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 8.463,
+          "median": 20.396500000000003,
+          "mean": 22.97369,
+          "max": 51.147
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 21,
+      "status": "COMPLETE",
+      "directory": "21_r2_hud_particles_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 117,
+      "selected": 150,
+      "timely_pre": 101,
+      "timely_post": 66,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.587,
+        "median": 28.372,
+        "mean": 34.72945333333333,
+        "max": 67.421
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.392,
+        "median": 34.246,
+        "mean": 42.035493333333335,
+        "max": 79.203
+      },
+      "source_capture_rate": 30.163188904788733,
+      "source_terminal_rate": 30.415605341753405,
+      "complete_run_throughput": 30.21122175691346,
+      "draw_rate": 119.3400655644644,
+      "initial_fallback_rate": 30.191480630600065,
+      "classical_draws": 1034,
+      "service_ms": {
+        "n": 150,
+        "min": 13.019,
+        "median": 14.6425,
+        "mean": 17.13438,
+        "max": 36.015
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 17.314,
+          "median": 81.7405,
+          "mean": 85.03635666666666,
+          "max": 118.017
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.019999999999999997,
+          "mean": 0.02614,
+          "max": 0.376
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.894,
+          "median": 18.2695,
+          "mean": 17.464016666666666,
+          "max": 50.573
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 22,
+      "status": "COMPLETE",
+      "directory": "22_r2_hud_particles_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 288,
+      "selected": 300,
+      "timely_pre": 213,
+      "timely_post": 132,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.036,
+        "median": 28.185499999999998,
+        "mean": 30.952206666666665,
+        "max": 64.776
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.436,
+        "median": 34.1315,
+        "mean": 37.457323333333335,
+        "max": 81.187
+      },
+      "source_capture_rate": 30.171644365717867,
+      "source_terminal_rate": 30.473533226801667,
+      "complete_run_throughput": 30.18381034988771,
+      "draw_rate": 122.6739043598789,
+      "initial_fallback_rate": 30.205095629938885,
+      "classical_draws": 918,
+      "service_ms": {
+        "n": 300,
+        "min": 12.011,
+        "median": 14.6335,
+        "mean": 15.18464,
+        "max": 35.738
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 29.112,
+          "median": 82.26599999999999,
+          "mean": 83.38556666666666,
+          "max": 127.249
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.031,
+          "median": 0.046,
+          "mean": 0.04807,
+          "max": 0.11
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.739,
+          "median": 21.982,
+          "mean": 22.81576,
+          "max": 51.86
+        }
+      }
+    },
+    {
+      "scene": "hud_particles",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 23,
+      "status": "COMPLETE",
+      "directory": "23_r2_hud_particles_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.164159611380704,
+      "source_terminal_rate": 30.33827275588608,
+      "complete_run_throughput": 30.197528070615512,
+      "draw_rate": 123.33060340102276,
+      "initial_fallback_rate": 30.19765831804093,
+      "classical_draws": 1224,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.059,
+          "median": 81.4325,
+          "mean": 84.31694333333333,
+          "max": 106.499
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.0,
+          "median": 0.001,
+          "mean": 0.0015166666666666666,
+          "max": 0.013
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.851,
+          "median": 6.9305,
+          "mean": 9.15931,
+          "max": 24.239
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 24,
+      "status": "COMPLETE",
+      "directory": "24_r2_reflective_plaza_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 116,
+      "selected": 150,
+      "timely_pre": 97,
+      "timely_post": 60,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.181,
+        "median": 29.685000000000002,
+        "mean": 34.49234,
+        "max": 67.926
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.189,
+        "median": 35.414,
+        "mean": 41.75968,
+        "max": 82.254
+      },
+      "source_capture_rate": 30.165809042962973,
+      "source_terminal_rate": 30.43812164009965,
+      "complete_run_throughput": 30.216169498207123,
+      "draw_rate": 120.58191055584732,
+      "initial_fallback_rate": 30.197258795860574,
+      "classical_draws": 1046,
+      "service_ms": {
+        "n": 150,
+        "min": 13.046,
+        "median": 14.501,
+        "mean": 17.14842,
+        "max": 43.578
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 16.551,
+          "median": 81.762,
+          "mean": 84.9372,
+          "max": 118.645
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.022,
+          "mean": 0.026693333333333333,
+          "max": 0.269
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.544,
+          "median": 18.671,
+          "mean": 17.42176,
+          "max": 58.811
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 25,
+      "status": "COMPLETE",
+      "directory": "25_r2_reflective_plaza_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 293,
+      "selected": 300,
+      "timely_pre": 210,
+      "timely_post": 107,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.366,
+        "median": 30.424,
+        "mean": 31.063253333333332,
+        "max": 63.358
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.222,
+        "median": 36.495999999999995,
+        "mean": 37.302973333333334,
+        "max": 79.195
+      },
+      "source_capture_rate": 30.16394355529187,
+      "source_terminal_rate": 30.453107612319513,
+      "complete_run_throughput": 30.1758922583849,
+      "draw_rate": 124.44131036699817,
+      "initial_fallback_rate": 30.196520775054804,
+      "classical_draws": 936,
+      "service_ms": {
+        "n": 300,
+        "min": 12.43,
+        "median": 14.605,
+        "mean": 15.07948,
+        "max": 38.643
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 29.185,
+          "median": 82.5535,
+          "mean": 82.94624333333333,
+          "max": 123.286
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.021,
+          "median": 0.047,
+          "mean": 0.047246666666666666,
+          "max": 0.1
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.359,
+          "median": 22.191,
+          "mean": 22.449773333333333,
+          "max": 54.476
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 26,
+      "status": "COMPLETE",
+      "directory": "26_r2_reflective_plaza_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.160730466665182,
+      "source_terminal_rate": 30.340723278194396,
+      "complete_run_throughput": 30.19433375145776,
+      "draw_rate": 127.93774529166431,
+      "initial_fallback_rate": 30.19051730997038,
+      "classical_draws": 1270,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 21.985,
+          "median": 81.11,
+          "mean": 83.32710666666667,
+          "max": 108.325
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.002,
+          "mean": 0.0018233333333333333,
+          "max": 0.011
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.808,
+          "median": 6.832000000000001,
+          "mean": 8.65002,
+          "max": 23.053
+        }
+      }
+    },
+    {
+      "scene": "reflective_plaza",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 27,
+      "status": "COMPLETE",
+      "directory": "27_r2_reflective_plaza_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 246,
+      "submitted": 246,
+      "completed": 246,
+      "eligible": 198,
+      "selected": 246,
+      "timely_pre": 160,
+      "timely_post": 108,
+      "routes": {
+        "accepted_neural": 246,
+        "refresh_policy_bypass": 54
+      },
+      "selection_age_pre_ms": {
+        "n": 246,
+        "min": 19.778,
+        "median": 29.2225,
+        "mean": 33.515170731707315,
+        "max": 67.502
+      },
+      "selection_age_post_ms": {
+        "n": 246,
+        "min": 22.751,
+        "median": 34.4755,
+        "mean": 40.127552845528456,
+        "max": 82.733
+      },
+      "source_capture_rate": 30.17669920804836,
+      "source_terminal_rate": 30.395912349574544,
+      "complete_run_throughput": 30.171340022855794,
+      "draw_rate": 111.42886736431673,
+      "initial_fallback_rate": 30.20692348747923,
+      "classical_draws": 861,
+      "service_ms": {
+        "n": 246,
+        "min": 11.336,
+        "median": 13.921,
+        "mean": 15.973418699186992,
+        "max": 43.075
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 34.875,
+          "median": 83.77250000000001,
+          "mean": 87.16274333333334,
+          "max": 158.55
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.047,
+          "mean": 0.04549,
+          "max": 0.536
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 9.168,
+          "median": 20.4445,
+          "mean": 22.975636666666666,
+          "max": 58.71
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 28,
+      "status": "COMPLETE",
+      "directory": "28_r2_barrier_yard_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 237,
+      "selected": 300,
+      "timely_pre": 141,
+      "timely_post": 69,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.621,
+        "median": 34.1295,
+        "mean": 38.275803333333336,
+        "max": 72.694
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 22.736,
+        "median": 40.7025,
+        "mean": 47.05586666666667,
+        "max": 92.67
+      },
+      "source_capture_rate": 30.1691845491397,
+      "source_terminal_rate": 30.51835995762541,
+      "complete_run_throughput": 30.180227263147337,
+      "draw_rate": 102.4307305889485,
+      "initial_fallback_rate": 30.207680327980647,
+      "classical_draws": 717,
+      "service_ms": {
+        "n": 300,
+        "min": 12.397,
+        "median": 15.5235,
+        "mean": 17.631533333333334,
+        "max": 44.964
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 29.482,
+          "median": 81.19,
+          "mean": 88.39154,
+          "max": 142.839
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.028,
+          "median": 0.046,
+          "mean": 0.04992333333333333,
+          "max": 0.11
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.677,
+          "median": 24.033,
+          "mean": 27.352976666666667,
+          "max": 62.934
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 29,
+      "status": "COMPLETE",
+      "directory": "29_r2_barrier_yard_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.169425033317538,
+      "source_terminal_rate": 30.372403248404712,
+      "complete_run_throughput": 30.200640978404127,
+      "draw_rate": 104.62661301881646,
+      "initial_fallback_rate": 30.211107947420953,
+      "classical_draws": 1038,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.771,
+          "median": 83.336,
+          "mean": 88.75201333333334,
+          "max": 123.403
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.001,
+          "mean": 0.0020766666666666668,
+          "max": 0.146
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.689,
+          "median": 7.7265,
+          "mean": 11.479816666666666,
+          "max": 26.212
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 30,
+      "status": "COMPLETE",
+      "directory": "30_r2_barrier_yard_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 204,
+      "submitted": 204,
+      "completed": 204,
+      "eligible": 139,
+      "selected": 204,
+      "timely_pre": 121,
+      "timely_post": 71,
+      "routes": {
+        "accepted_neural": 204,
+        "refresh_policy_bypass": 96
+      },
+      "selection_age_pre_ms": {
+        "n": 204,
+        "min": 19.572,
+        "median": 31.2605,
+        "mean": 40.2956568627451,
+        "max": 75.148
+      },
+      "selection_age_post_ms": {
+        "n": 204,
+        "min": 22.832,
+        "median": 36.962,
+        "mean": 48.545529411764704,
+        "max": 91.67
+      },
+      "source_capture_rate": 30.16970205148929,
+      "source_terminal_rate": 30.40410925264157,
+      "complete_run_throughput": 30.161793894810543,
+      "draw_rate": 90.68876050205539,
+      "initial_fallback_rate": 30.20834869850512,
+      "classical_draws": 697,
+      "service_ms": {
+        "n": 204,
+        "min": 12.103,
+        "median": 14.469000000000001,
+        "mean": 18.13956862745098,
+        "max": 38.509
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.728,
+          "median": 83.0625,
+          "mean": 92.17228333333334,
+          "max": 233.753
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.046,
+          "mean": 0.03784,
+          "max": 0.167
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 7.945,
+          "median": 20.538,
+          "mean": 24.80722,
+          "max": 56.892
+        }
+      }
+    },
+    {
+      "scene": "barrier_yard",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 31,
+      "status": "COMPLETE",
+      "directory": "31_r2_barrier_yard_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 101,
+      "selected": 150,
+      "timely_pre": 74,
+      "timely_post": 53,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 19.987,
+        "median": 33.793,
+        "mean": 41.06598666666667,
+        "max": 78.973
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.242,
+        "median": 41.0715,
+        "mean": 50.32178,
+        "max": 94.183
+      },
+      "source_capture_rate": 30.166043386438012,
+      "source_terminal_rate": 30.47599633064927,
+      "complete_run_throughput": 30.21511652207894,
+      "draw_rate": 100.84877353268313,
+      "initial_fallback_rate": 30.207549098885575,
+      "classical_draws": 850,
+      "service_ms": {
+        "n": 150,
+        "min": 13.248,
+        "median": 15.2755,
+        "mean": 19.3133,
+        "max": 44.664
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 16.974,
+          "median": 81.305,
+          "mean": 89.43142666666667,
+          "max": 139.429
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.020999999999999998,
+          "mean": 0.02713,
+          "max": 0.351
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.758,
+          "median": 19.5975,
+          "mean": 20.822606666666665,
+          "max": 63.205
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 32,
+      "status": "COMPLETE",
+      "directory": "32_r2_forest_outpost_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.167342993609367,
+      "source_terminal_rate": 30.361235749004578,
+      "complete_run_throughput": 30.19958908425786,
+      "draw_rate": 112.97926109950691,
+      "initial_fallback_rate": 30.20340833846404,
+      "classical_draws": 1121,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.244,
+          "median": 82.7295,
+          "mean": 86.83332333333334,
+          "max": 118.507
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.0,
+          "median": 0.001,
+          "mean": 0.00141,
+          "max": 0.005
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.947,
+          "median": 7.6325,
+          "mean": 10.448386666666666,
+          "max": 26.025
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 33,
+      "status": "COMPLETE",
+      "directory": "33_r2_forest_outpost_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 215,
+      "submitted": 215,
+      "completed": 215,
+      "eligible": 159,
+      "selected": 215,
+      "timely_pre": 130,
+      "timely_post": 80,
+      "routes": {
+        "accepted_neural": 215,
+        "refresh_policy_bypass": 85
+      },
+      "selection_age_pre_ms": {
+        "n": 215,
+        "min": 19.23,
+        "median": 31.086,
+        "mean": 38.30647441860465,
+        "max": 73.556
+      },
+      "selection_age_post_ms": {
+        "n": 215,
+        "min": 22.869,
+        "median": 36.829,
+        "mean": 45.98860930232558,
+        "max": 90.027
+      },
+      "source_capture_rate": 30.170517914779285,
+      "source_terminal_rate": 30.412984940893534,
+      "complete_run_throughput": 30.179368056104654,
+      "draw_rate": 95.76958261380267,
+      "initial_fallback_rate": 30.20633757249142,
+      "classical_draws": 736,
+      "service_ms": {
+        "n": 215,
+        "min": 10.726,
+        "median": 14.304,
+        "mean": 17.34533023255814,
+        "max": 38.602
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 30.205,
+          "median": 82.8925,
+          "mean": 90.92566,
+          "max": 229.41
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.045,
+          "mean": 0.04257333333333333,
+          "max": 0.922
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 8.502,
+          "median": 20.419,
+          "mean": 24.270893333333333,
+          "max": 56.237
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 34,
+      "status": "COMPLETE",
+      "directory": "34_r2_forest_outpost_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 111,
+      "selected": 150,
+      "timely_pre": 74,
+      "timely_post": 40,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 20.915,
+        "median": 33.445,
+        "mean": 39.49152,
+        "max": 77.324
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 24.556,
+        "median": 40.3235,
+        "mean": 48.05809333333333,
+        "max": 92.137
+      },
+      "source_capture_rate": 30.167190808995272,
+      "source_terminal_rate": 30.466518824232846,
+      "complete_run_throughput": 30.213765411664063,
+      "draw_rate": 106.67472205336539,
+      "initial_fallback_rate": 30.20206901344487,
+      "classical_draws": 908,
+      "service_ms": {
+        "n": 150,
+        "min": 12.704,
+        "median": 15.307,
+        "mean": 18.401086666666668,
+        "max": 45.836
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 17.792,
+          "median": 81.55699999999999,
+          "mean": 87.84410333333334,
+          "max": 138.205
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.020999999999999998,
+          "mean": 0.026513333333333333,
+          "max": 0.074
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.862,
+          "median": 19.468,
+          "mean": 19.56964,
+          "max": 62.434
+        }
+      }
+    },
+    {
+      "scene": "forest_outpost",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 35,
+      "status": "COMPLETE",
+      "directory": "35_r2_forest_outpost_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 263,
+      "selected": 300,
+      "timely_pre": 178,
+      "timely_post": 78,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.726,
+        "median": 31.7055,
+        "mean": 35.429343333333335,
+        "max": 68.073
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 23.404,
+        "median": 38.4705,
+        "mean": 43.205346666666664,
+        "max": 85.461
+      },
+      "source_capture_rate": 30.170119110419407,
+      "source_terminal_rate": 30.472346854800286,
+      "complete_run_throughput": 30.162600547028923,
+      "draw_rate": 109.9838022940025,
+      "initial_fallback_rate": 30.203170363154232,
+      "classical_draws": 793,
+      "service_ms": {
+        "n": 300,
+        "min": 12.473,
+        "median": 15.151499999999999,
+        "mean": 16.59178,
+        "max": 39.577
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 35.596,
+          "median": 82.1265,
+          "mean": 86.38553,
+          "max": 134.77
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.019,
+          "median": 0.045,
+          "mean": 0.04762333333333333,
+          "max": 0.115
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.479,
+          "median": 23.046,
+          "mean": 25.434596666666668,
+          "max": 55.486
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "scheduler",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 36,
+      "status": "COMPLETE",
+      "directory": "36_r2_corridor_neon_160_scheduler",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 257,
+      "submitted": 257,
+      "completed": 257,
+      "eligible": 219,
+      "selected": 257,
+      "timely_pre": 179,
+      "timely_post": 131,
+      "routes": {
+        "accepted_neural": 257,
+        "refresh_policy_bypass": 43
+      },
+      "selection_age_pre_ms": {
+        "n": 257,
+        "min": 19.413,
+        "median": 27.952,
+        "mean": 32.3691673151751,
+        "max": 68.3
+      },
+      "selection_age_post_ms": {
+        "n": 257,
+        "min": 23.392,
+        "median": 33.006,
+        "mean": 38.6990233463035,
+        "max": 82.63
+      },
+      "source_capture_rate": 30.17164132114251,
+      "source_terminal_rate": 30.404804894705823,
+      "complete_run_throughput": 30.181945824010885,
+      "draw_rate": 115.80207994633228,
+      "initial_fallback_rate": 30.20321307639524,
+      "classical_draws": 893,
+      "service_ms": {
+        "n": 257,
+        "min": 11.438,
+        "median": 13.908,
+        "mean": 15.57835019455253,
+        "max": 43.52
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 29.72,
+          "median": 82.586,
+          "mean": 86.05723,
+          "max": 151.376
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.045,
+          "mean": 0.04788666666666667,
+          "max": 0.846
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 8.426,
+          "median": 20.682000000000002,
+          "mean": 22.62812,
+          "max": 59.485
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "fixed2",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 37,
+      "status": "COMPLETE",
+      "directory": "37_r2_corridor_neon_160_fixed2",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 150,
+      "submitted": 150,
+      "completed": 150,
+      "eligible": 142,
+      "selected": 150,
+      "timely_pre": 123,
+      "timely_post": 64,
+      "routes": {
+        "accepted_neural": 150,
+        "fixed_period_fallback": 150
+      },
+      "selection_age_pre_ms": {
+        "n": 150,
+        "min": 19.666,
+        "median": 28.488,
+        "mean": 30.56986,
+        "max": 70.212
+      },
+      "selection_age_post_ms": {
+        "n": 150,
+        "min": 23.854,
+        "median": 34.009,
+        "mean": 36.675826666666666,
+        "max": 81.732
+      },
+      "source_capture_rate": 30.157250393027645,
+      "source_terminal_rate": 30.39950645028725,
+      "complete_run_throughput": 30.20557308933137,
+      "draw_rate": 132.8160025748972,
+      "initial_fallback_rate": 30.183501556721662,
+      "classical_draws": 1168,
+      "service_ms": {
+        "n": 150,
+        "min": 13.14,
+        "median": 14.442,
+        "mean": 15.32516,
+        "max": 38.361
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 17.219,
+          "median": 81.17500000000001,
+          "mean": 81.96564666666667,
+          "max": 121.561
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.001,
+          "median": 0.0385,
+          "mean": 0.025353333333333332,
+          "max": 0.422
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.489,
+          "median": 18.706000000000003,
+          "mean": 15.014286666666667,
+          "max": 52.039
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "always",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 38,
+      "status": "COMPLETE",
+      "directory": "38_r2_corridor_neon_160_always",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 300,
+      "submitted": 300,
+      "completed": 300,
+      "eligible": 281,
+      "selected": 300,
+      "timely_pre": 215,
+      "timely_post": 110,
+      "routes": {
+        "accepted_neural": 300
+      },
+      "selection_age_pre_ms": {
+        "n": 300,
+        "min": 19.304,
+        "median": 29.6785,
+        "mean": 31.36487,
+        "max": 61.696
+      },
+      "selection_age_post_ms": {
+        "n": 300,
+        "min": 22.403,
+        "median": 36.237,
+        "mean": 37.76939,
+        "max": 76.553
+      },
+      "source_capture_rate": 30.16321020488991,
+      "source_terminal_rate": 30.447448162710348,
+      "complete_run_throughput": 30.1764537959263,
+      "draw_rate": 124.62889431318757,
+      "initial_fallback_rate": 30.191755005318395,
+      "classical_draws": 938,
+      "service_ms": {
+        "n": 300,
+        "min": 12.181,
+        "median": 14.491,
+        "mean": 15.233236666666667,
+        "max": 34.341
+      },
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 28.766,
+          "median": 81.99199999999999,
+          "mean": 83.34765,
+          "max": 121.273
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.018,
+          "median": 0.046,
+          "mean": 0.04754,
+          "max": 0.08
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 17.217,
+          "median": 21.559,
+          "mean": 22.681613333333335,
+          "max": 48.583
+        }
+      }
+    },
+    {
+      "scene": "corridor_neon",
+      "width": 160,
+      "control": "bicubic",
+      "mode": "prompt",
+      "repetition": 2,
+      "index": 39,
+      "status": "COMPLETE",
+      "directory": "39_r2_corridor_neon_160_bicubic",
+      "valid": true,
+      "source_frames": 300,
+      "callback_count": 0,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "routes": {
+        "forced_classical_control": 300
+      },
+      "selection_age_pre_ms": null,
+      "selection_age_post_ms": null,
+      "source_capture_rate": 30.167970010414507,
+      "source_terminal_rate": 30.35381071790011,
+      "complete_run_throughput": 30.200330874825063,
+      "draw_rate": 130.48616221959077,
+      "initial_fallback_rate": 30.19585902674404,
+      "classical_draws": 1295,
+      "service_ms": null,
+      "per_source_timings": {
+        "frame_age_ms": {
+          "n": 300,
+          "min": 22.354,
+          "median": 80.703,
+          "mean": 82.97664666666667,
+          "max": 110.048
+        },
+        "godot_upload_ms": {
+          "n": 300,
+          "min": 0.0,
+          "median": 0.001,
+          "mean": 0.0013566666666666666,
+          "max": 0.005
+        },
+        "neural_response_age_ms": {
+          "n": 300,
+          "min": 4.857,
+          "median": 6.7645,
+          "mean": 8.469606666666667,
+          "max": 23.245
+        }
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "width": 160,
+      "control": "bicubic",
+      "repetition": null,
+      "cells": 10,
+      "source_frames": 3000,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "eligible_fraction": 0.0,
+      "timely_fraction": 0.0,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.166334867850257,
+        "source_terminal_rate": 30.35790831927881,
+        "complete_run_throughput": 30.19885287021585,
+        "draw_rate": 119.731834047855,
+        "initial_fallback_rate": 30.19970938426318
+      },
+      "routes": {
+        "forced_classical_control": 3000
+      }
+    },
+    {
+      "width": 160,
+      "control": "bicubic",
+      "repetition": 1,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "eligible_fraction": 0.0,
+      "timely_fraction": 0.0,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.166744112623057,
+        "source_terminal_rate": 30.362527488679643,
+        "complete_run_throughput": 30.199221188519633,
+        "draw_rate": 119.59159108958977,
+        "initial_fallback_rate": 30.199708580398294
+      },
+      "routes": {
+        "forced_classical_control": 1500
+      }
+    },
+    {
+      "width": 160,
+      "control": "bicubic",
+      "repetition": 2,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 0,
+      "completed": 0,
+      "eligible": 0,
+      "selected": 0,
+      "timely_pre": 0,
+      "timely_post": 0,
+      "eligible_fraction": 0.0,
+      "timely_fraction": 0.0,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.16592562307746,
+        "source_terminal_rate": 30.353289149877977,
+        "complete_run_throughput": 30.198484551912063,
+        "draw_rate": 119.87207700612024,
+        "initial_fallback_rate": 30.19971018812807
+      },
+      "routes": {
+        "forced_classical_control": 1500
+      }
+    },
+    {
+      "width": 160,
+      "control": "always",
+      "repetition": null,
+      "cells": 10,
+      "source_frames": 3000,
+      "submitted": 3000,
+      "completed": 3000,
+      "eligible": 2791,
+      "selected": 3000,
+      "timely_pre": 1939,
+      "timely_post": 1032,
+      "eligible_fraction": 0.9303333333333333,
+      "timely_fraction": 0.344,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.166332213109012,
+        "source_terminal_rate": 30.465103039415933,
+        "complete_run_throughput": 30.167064336058026,
+        "draw_rate": 117.86510107389604,
+        "initial_fallback_rate": 30.199816985246986
+      },
+      "routes": {
+        "accepted_neural": 3000
+      }
+    },
+    {
+      "width": 160,
+      "control": "always",
+      "repetition": 1,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 1500,
+      "completed": 1500,
+      "eligible": 1429,
+      "selected": 1500,
+      "timely_pre": 982,
+      "timely_post": 536,
+      "eligible_fraction": 0.9526666666666667,
+      "timely_fraction": 0.35733333333333334,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.165044069126274,
+        "source_terminal_rate": 30.45724691598042,
+        "complete_run_throughput": 30.158331829241018,
+        "draw_rate": 118.89847376318896,
+        "initial_fallback_rate": 30.19878955020458
+      },
+      "routes": {
+        "accepted_neural": 1500
+      }
+    },
+    {
+      "width": 160,
+      "control": "always",
+      "repetition": 2,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 1500,
+      "completed": 1500,
+      "eligible": 1362,
+      "selected": 1500,
+      "timely_pre": 957,
+      "timely_post": 496,
+      "eligible_fraction": 0.908,
+      "timely_fraction": 0.33066666666666666,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.16762035709175,
+        "source_terminal_rate": 30.472959162851446,
+        "complete_run_throughput": 30.175796842875034,
+        "draw_rate": 116.83172838460312,
+        "initial_fallback_rate": 30.200844420289393
+      },
+      "routes": {
+        "accepted_neural": 1500
+      }
+    },
+    {
+      "width": 160,
+      "control": "fixed2",
+      "repetition": null,
+      "cells": 10,
+      "source_frames": 3000,
+      "submitted": 1500,
+      "completed": 1500,
+      "eligible": 1194,
+      "selected": 1500,
+      "timely_pre": 951,
+      "timely_post": 536,
+      "eligible_fraction": 0.398,
+      "timely_fraction": 0.17866666666666667,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.16441922697664,
+        "source_terminal_rate": 30.438944668407334,
+        "complete_run_throughput": 30.21214383479492,
+        "draw_rate": 116.34558338598369,
+        "initial_fallback_rate": 30.19740010312892
+      },
+      "routes": {
+        "accepted_neural": 1500,
+        "fixed_period_fallback": 1500
+      }
+    },
+    {
+      "width": 160,
+      "control": "fixed2",
+      "repetition": 1,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 750,
+      "completed": 750,
+      "eligible": 607,
+      "selected": 750,
+      "timely_pre": 482,
+      "timely_post": 253,
+      "eligible_fraction": 0.4046666666666667,
+      "timely_fraction": 0.16866666666666666,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.164941946710755,
+        "source_terminal_rate": 30.438739619410185,
+        "complete_run_throughput": 30.211918413950844,
+        "draw_rate": 116.6388719157159,
+        "initial_fallback_rate": 30.198428387155293
+      },
+      "routes": {
+        "accepted_neural": 750,
+        "fixed_period_fallback": 750
+      }
+    },
+    {
+      "width": 160,
+      "control": "fixed2",
+      "repetition": 2,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 750,
+      "completed": 750,
+      "eligible": 587,
+      "selected": 750,
+      "timely_pre": 469,
+      "timely_post": 283,
+      "eligible_fraction": 0.3913333333333333,
+      "timely_fraction": 0.18866666666666668,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.163896507242526,
+        "source_terminal_rate": 30.439149717404483,
+        "complete_run_throughput": 30.21236925563899,
+        "draw_rate": 116.05229485625148,
+        "initial_fallback_rate": 30.19637181910255
+      },
+      "routes": {
+        "accepted_neural": 750,
+        "fixed_period_fallback": 750
+      }
+    },
+    {
+      "width": 160,
+      "control": "scheduler",
+      "repetition": null,
+      "cells": 10,
+      "source_frames": 3000,
+      "submitted": 2391,
+      "completed": 2391,
+      "eligible": 1949,
+      "selected": 2391,
+      "timely_pre": 1580,
+      "timely_post": 980,
+      "eligible_fraction": 0.6496666666666666,
+      "timely_fraction": 0.32666666666666666,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.16892184138995,
+        "source_terminal_rate": 30.380954591417893,
+        "complete_run_throughput": 30.167648807650803,
+        "draw_rate": 106.40469460457764,
+        "initial_fallback_rate": 30.20235276092467
+      },
+      "routes": {
+        "accepted_neural": 2391,
+        "refresh_policy_bypass": 609
+      }
+    },
+    {
+      "width": 160,
+      "control": "scheduler",
+      "repetition": 1,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 1220,
+      "completed": 1220,
+      "eligible": 1025,
+      "selected": 1220,
+      "timely_pre": 807,
+      "timely_post": 461,
+      "eligible_fraction": 0.6833333333333333,
+      "timely_fraction": 0.30733333333333335,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.166495576401232,
+        "source_terminal_rate": 30.369094287194066,
+        "complete_run_throughput": 30.160589091684912,
+        "draw_rate": 107.69901544723479,
+        "initial_fallback_rate": 30.20016964324285
+      },
+      "routes": {
+        "accepted_neural": 1220,
+        "refresh_policy_bypass": 280
+      }
+    },
+    {
+      "width": 160,
+      "control": "scheduler",
+      "repetition": 2,
+      "cells": 5,
+      "source_frames": 1500,
+      "submitted": 1171,
+      "completed": 1171,
+      "eligible": 924,
+      "selected": 1171,
+      "timely_pre": 773,
+      "timely_post": 519,
+      "eligible_fraction": 0.616,
+      "timely_fraction": 0.346,
+      "equal_cell_mean_rates": {
+        "source_capture_rate": 30.171348106378662,
+        "source_terminal_rate": 30.392814895641717,
+        "complete_run_throughput": 30.174708523616694,
+        "draw_rate": 105.1103737619205,
+        "initial_fallback_rate": 30.20453587860649
+      },
+      "routes": {
+        "accepted_neural": 1171,
+        "refresh_policy_bypass": 329
+      }
+    }
+  ],
+  "incomplete_cells": []
+}

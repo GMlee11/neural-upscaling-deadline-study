@@ -76,6 +76,7 @@ try {
         tests/test_paper1_composition_artifact.py `
         tests/test_paper1_prompt_artifact.py `
         tests/test_paper1_corrected_artifact.py `
+        tests/test_paper1_three_resolution_artifact.py `
         tests/test_paper1_release_inventory.py `
         --basetemp (Join-Path $CandidateRoot "pytest") `
         -p no:cacheprovider `
@@ -93,6 +94,9 @@ try {
     if ($LASTEXITCODE -ne 0) { throw "Prompt-selection evidence verification failed." }
     & $Python -B "artifact/paper1_hotmobile2027/verify_corrected_runtime.py"
     if ($LASTEXITCODE -ne 0) { throw "Corrected-system capture verification failed." }
+
+    & $Python -B "artifact/paper1_hotmobile2027/verify_180p_runtime.py"
+    if ($LASTEXITCODE -ne 0) { throw "180p capture replay failed." }
 
     & $Python "artifact/paper1_hotmobile2027/verify_rk3566_summary.py"
     if ($LASTEXITCODE -ne 0) { throw "RK3566 compact evidence verification failed." }

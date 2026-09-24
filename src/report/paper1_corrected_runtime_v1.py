@@ -25,11 +25,23 @@ def load_summary(path: Path, board: str) -> dict:
     return summary
 
 
-def table(summaries: list[dict]) -> str:
+def load_180p_summary(root: Path, board: str) -> dict:
+    summary = json.loads((root/f'results/analysis/paper1_180p_output_v1_{board}.json').read_text())
+    assert summary['board'] == board and summary['status'] == 'COMPLETE'
+    assert summary['engineering'] is False and not summary['incomplete_cells']
+    assert len(summary['cells']) == 40
+    assert sum(r['source_frames'] for r in summary['cells']) == 12000
+    rows = [r for r in summary['aggregates'] if r['repetition'] is None]
+    assert {(r['width'],r['control']) for r in rows} == {(160,c) for c in CONTROLS}
+    assert all(r['source_frames']==3000 and r['cells']==10 for r in rows)
+    return summary
+
+
+def table(summaries: list[dict], low_summaries: list[dict] | None = None) -> str:
     lines = [
-        '% Generated from the separate verified corrected-runtime V1 summaries.',
+        '% Generated from verified source-linked runtime summaries; sessions remain separate.',
         r'\begin{table*}[t]',
-        r'\caption{Corrected-system primary matrix: each row contains 3,000 source frames (five scenes, two repetitions). Receipt-side eligible means receipt age plus assignment duration $\leq33.33$ ms, excluding intervening waiting. Timely means first source-linked neural post-draw age $\leq33.33$ ms. Source rate is the equal-cell arithmetic mean of per-cell capture rates, not panel FPS. Classical zeros mean no neural work, not failed classical delivery.}',
+        r'\caption{Three-resolution runtime matrix: each row contains 3,000 source frames (five scenes, two repetitions). The 180p and 360p/720p measurements use separate sessions and configurations (Section~\ref{sec:experimental-design}). Receipt-side eligible means receipt age plus assignment duration $\leq33.33$ ms, excluding intervening waiting. Timely means first source-linked neural post-draw age $\leq33.33$ ms. Source rate is the equal-cell arithmetic mean of per-cell capture rates, not panel FPS. Classical zeros mean no neural work, not failed classical delivery.}',
         r'\label{tab:corrected-runtime}',
         r'\centering',
         r'\fontsize{10}{11}\selectfont',
@@ -41,10 +53,14 @@ def table(summaries: list[dict]) -> str:
     ]
     for summary in summaries:
         rows = {(r['width'],r['control']):r for r in summary['aggregates'] if r['repetition'] is None}
-        for width in (320,640):
+        if low_summaries:
+            low = next(s for s in low_summaries if s['board']==summary['board'])
+            rows.update({(r['width'],r['control']):r for r in low['aggregates'] if r['repetition'] is None})
+        widths = sorted({width for width, control in rows})
+        for width in widths:
             for index,control in enumerate(CONTROLS):
                 row=rows[width,control]
-                soc=summary['board'].upper() if width==320 and index==0 else ''
+                soc=summary['board'].upper() if width==widths[0] and index==0 else ''
                 output=f'{width*18//16}p' if index==0 else ''
                 fields=[soc,output,LABELS[control],f"{row['equal_cell_mean_rates']['source_capture_rate']:.2f}"]
                 fields.extend(f'{row[key]:,}' for key in ('submitted','eligible','selected','timely_post'))
@@ -105,22 +121,23 @@ def timing_examples(root: Path=ROOT) -> list[dict]:
 
 
 def timing_figure(root: Path=ROOT) -> str:
-    lines=[r'\newcommand{\CorrectedTimingFigure}{%',r'\begin{figure}[t]',r'\centering',
+    # Keep the Python entry point stable for existing replay consumers; this
+    # presentation is now a table, with unchanged evidence and selection rule.
+    lines=[r'\newcommand{\CorrectedTimingTable}{%',r'\begin{table}[htbp]',
+           r'\caption{RK3576 360p always-neural examples, one per repetition (selection rule in Section~\ref{sec:delivery-results}). All values are in ms. Event times are elapsed from capture; $^*$marks the stamp just after assignment. Receipt-side scores exclude intervening waiting. Both examples pass the 33.33-ms score threshold but are already late at assignment.}',
+           r'\label{tab:corrected-timing}',r'\centering',
            r'\setlength{\tabcolsep}{3pt}',r'\begin{tabular}{@{}lrrrr@{}}',r'\toprule',
            r' & Capture & Receipt & Assign.$^*$ & Post-draw \\',r'\midrule']
     examples=timing_examples(root)
     for e in examples:
         lines.append(f"R{e['repetition']} & 0 & {e['receipt_ms']:.2f} & {e['assignment_stamp_ms']:.2f} & {e['first_post_ms']:.2f}"+r' \\')
     lines.extend([r'\bottomrule',r'\end{tabular}',
-        r'\par\smallskip Capture $\rightarrow$ receipt $\rightarrow$ assignment $\rightarrow$ first post-draw',
         r'\par\smallskip Receipt-side scores (ms; not event timestamps)',
         r'\par Receipt age + assignment duration',r'\par\smallskip',
         r'\begin{tabular}{@{}lrlr@{}}'])
     for e in examples:
         lines.append(f"R{e['repetition']} & {e['receipt_ms']:.3f} + {e['upload_ms']:.3f} & = & {e['eligibility_ms']:.3f}"+r' \\')
-    lines.extend([r'\end{tabular}',
-        r'\caption{RK3576 360p always-neural examples, one per repetition (selection rule in Section~\ref{sec:delivery-results}). Elapsed event times are measured from capture; $^*$marks the stamp just after assignment. Receipt-side scores exclude intervening waiting. Both examples pass the 33.33-ms score threshold but are already late at assignment. Arrows show event order, not duration.}',
-        r'\label{fig:corrected-timing}',r'\end{figure}',r'}'])
+    lines.extend([r'\end{tabular}',r'\end{table}',r'}'])
     return '\n'.join(lines)+'\n'
 
 
@@ -128,7 +145,12 @@ def generate(root: Path=ROOT) -> str:
     summaries=[load_summary(root/f'results/{board}/paper1_corrected_runtime_v1/summary-v1.json',board)
                for board in ('rk3576','rk3566')]
     historical=(root/'docs/paper/generated/paper1_hotmobile2027.tex').read_text()
-    return table(summaries)+'\n'+quality_table(historical)+'\n'+timing_figure(root)
+    # Definitions only: the manuscript places each unchanged evidence table
+    # near its discussion instead of emitting both wide floats in the intro.
+    low_summaries=[load_180p_summary(root,board) for board in ('rk3576','rk3566')]
+    return (r'\newcommand{\CorrectedRuntimeTable}{%'+'\n'+table(summaries,low_summaries)+'}\n\n'
+            +r'\newcommand{\ConfirmatoryQualityTable}{%'+'\n'+quality_table(historical)+'}\n\n'
+            +timing_figure(root))
 
 
 def main() -> None:
